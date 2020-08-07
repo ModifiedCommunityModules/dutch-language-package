@@ -1,0 +1,45 @@
+zoomtext = 'Voor een grotere weergave klikt u op de thumbnail'
+products_desc = 'Productbeschrijving'
+products_fsk18_check = 'Dit artikel kan alleen worden aangeschaft na leeftijdscontrole.'
+products_manufacturer_model = 'HAN:'
+products_tags = 'Kenmerken'
+heading_products_tags = 'Producteigenschappen'
+
+first = '&laquo; Eerste'
+back = '&laquo; vorige'
+overview = 'Overzicht'
+next = 'volgende &raquo;'
+last = 'Laatste &raquo;'
+
+heading_miscellaneous = 'Betaalmethoden'
+text_miscellaneous = 'Het vakje kan worden geselecteerd onder tpl_modified/boxes/box_miscellaneous.html kan worden veranderd. De taalvariabelen bevinden zich in het bestand tpl_modified/lang/german/lang_german.custom.'
+
+ab_admin = 'beheersgebied'
+ab_orders = 'Bestellingen'
+ab_contentmanager = 'Content Manager'
+ab_customers = 'Klanten'
+ab_category = 'Categorie&euml;n/artikelen'
+ab_logoff = 'Uitloggen'
+ab_news = 'Nieuws'
+ab_offline = 'Offline winkelen'
+ab_update = 'Update'
+ab_support = 'Ondersteuning'
+ab_shop = 'Winkel'
+ab_caching = 'Caching'
+
+ab_edit_content = 'Inhoud bewerken'
+ab_edit_product = 'Bewerk artikel'
+ab_edit_attributes = 'Het bewerken van attributen'
+ab_edit_category = 'Categorie bewerken'
+ab_edit_xsell = 'Bewerk Kruisverkoop'
+ab_edit_tags = 'Artikel eigenschappen'
+
+info_reviews = 'Beoordelingen:'
+info_review = 'Evaluatie:'
+
+heading_trustedshops = 'betrouwbare winkels'
+
+text_search_again = 'Het zoeken leverde geen exacte treffers op'
+
+listing_listview = 'Lijstweergave'
+listing_boxview = 'Boxweergave'

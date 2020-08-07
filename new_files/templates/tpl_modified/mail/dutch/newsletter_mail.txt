@@ -1,0 +1,34 @@
+
+Hartelijk dank voor uw inschrijving op onze nieuwsbrief.
+
+{if isset($LINK)}
+U ontvangt deze e-mail omdat u onze nieuwsbrief wilt ontvangen.
+
+Klik op de activeringslink om uw e-mailadres te activeren voor het ontvangen van de nieuwsbrief.
+
+Uw activeringslink:
+{$LINK}
+
+Als u zich niet heeft aangemeld voor onze nieuwsbrief of deze niet wenst te ontvangen,
+vragen we je om de activeringslink gewoon te negeren. 
+
+Uw toestemming om onze nieuwsbrief te ontvangen kan te allen tijde worden ingetrokken. De nieuwsbrief wordt verstuurd volgens ons privacybeleid.
+{/if}
+
+{if $SEND_GIFT == true}
+Als klein geschenk sturen wij u een waardebon: {$GIFT_AMMOUNT}
+
+Uw persoonlijke voucher code is {$GIFT_CODE}. U kunt deze code bij de kassa tijdens het bestelproces crediteren.
+
+Gebruik de volgende link {$GIFT_LINK} om de voucher in te wisselen.
+{/if}
+
+{if $SEND_COUPON == true}
+Als klein geschenk sturen we je een coupon.
+
+Coupon beschrijving: {$COUPON_DESC}
+ 
+Voer gewoon uw persoonlijke code {$COUPON_CODE} in tijdens het betalingsproces.
+{/if}
+
+[SIGNATUR]

@@ -1,0 +1,33 @@
+{if $GENDER != ''}Geachte {if $GENDER == 'Herr'}heer{/if} {$GENDER}{else}Hallo{/if} {$NAME},
+
+U heeft zojuist met succes uw klantaccount aangemaakt.
+
+Als geregistreerde klant heeft u de volgende voordelen in onze winkel:
+
+-Klantwagen - Elk artikel blijft geregistreerd totdat u naar de kassa gaat, of de producten uit de winkelwagen haalt.
+-Addresboek - We kunnen de producten nu naar het door u gekozen adres sturen. De perfecte manier om een verjaardagscadeau te sturen.
+-Voorafgaande bestellingen - U kunt altijd uw eerdere bestellingen controleren.
+-Openingen over producten - Deel uw mening over onze producten met andere klanten.
+
+Let op: Dit e-mail adres is door een klant aan ons verstrekt. Als u zich niet heeft geregistreerd, stuur dan een e-mail naar: {$content.MAIL_REPLY_ADDRESS}
+
+{if $SEND_GIFT == true}
+Als klein welkomstcadeau sturen wij u een voucher: 
+{$GIFT_AMMOUNT}
+
+Uw persoonlijke voucher code is {$GIFT_CODE}. U kunt deze code bij de kassa tijdens het bestelproces crediteren.
+
+Om de voucher in te wisselen kunt u de volgende link gebruiken {$GIFT_LINK}.
+{/if}
+
+{if $SEND_COUPON == true}
+Als klein welkomstcadeau sturen wij u een coupon.
+
+Couponbeschrijving: {$COUPON_DESC}
+ 
+Voer gewoon uw persoonlijke code {$COUPON_CODE} in tijdens het betalingsproces.
+{/if}
+
+Als u vragen heeft over onze klantenservice, neem dan contact met ons op: {$content.MAIL_REPLY_ADDRESS}
+
+[SIGNATUR]

@@ -1,0 +1,52 @@
+<div style="width:700px;margin: 0px auto;">
+<table width="700" border="0" align="center" cellpadding="5" cellspacing="0">
+	<tr> 
+    	<td align="center" style="padding: 10px 0px;"><img src="{$logo_path}logo.gif" /></td>
+	</tr>
+	<tr> 
+    <td style="font-size:14px;text-transform:uppercase;padding:10px 5px;border-top: 1px dotted #999;border-bottom: 1px dotted #999;">
+      <font face="Tahoma, Verdana, sans-serif">Abonnement op de nieuwsbrief</font>
+    </td>
+	</tr>
+	<tr> 
+		<td>
+      <br />
+      <font size="2" face="Tahoma, Verdana, sans-serif"><b>Hartelijk dank voor uw inschrijving op onze nieuwsbrief.</b><br />
+			<br />
+			{if isset($LINK)}
+      U ontvangt deze e-mail omdat u onze nieuwsbrief wilt ontvangen.<br />
+      <br />
+      Klik op de activeringslink om uw e-mailadres te activeren voor het ontvangen van de nieuwsbrief.<br />
+      <br />
+      <b>Uw activeringslink:</b><br />
+      <a href="{$LINK}">{$LINK}</a><br />
+      <br />
+      Als u zich niet heeft aangemeld voor onze nieuwsbrief of de nieuwsbrief niet wenst te ontvangen, neem dan contact met ons op, 
+      negeer gewoon de activeringslink.<br />
+      <br />
+      Uw toestemming om onze nieuwsbrief te ontvangen kan te allen tijde worden ingetrokken. De nieuwsbrief wordt verstuurd in overeenstemming met onze verklaring inzake gegevensbescherming.<br />
+      {/if}
+      
+      {if $SEND_GIFT == true}
+      <br />
+      Uw toestemming om onze nieuwsbrief te ontvangen kan te allen tijde worden ingetrokken. <b>{$GIFT_AMMOUNT}</b><br />
+      <br />
+      Uw persoonlijke voucher code is <b>{$GIFT_CODE}</b>. U kunt deze creditnota tijdens het bestelproces aan de kassa boeken.
+      Om de voucher in te wisselen klikt u op <a href="{$GIFT_LINK}">[Inwisseling van tegoedbonnen]</a>.<br />
+      {/if}
+
+      {if $SEND_COUPON == true}
+      <br />
+      Als klein geschenk sturen wij u een coupon.<br />
+      Couponbeschrijving: <b>{$COUPON_DESC}</b><br />
+      Voer gewoon uw persoonlijke code {$COUPON_CODE} in tijdens het betalingsproces.<br />
+      {/if}
+      <br />
+      Wij wensen u veel plezier met ons ONLINE aanbod!
+      </font>
+		</td>
+	</tr>
+</table>
+
+[SIGNATUR]
+</div>

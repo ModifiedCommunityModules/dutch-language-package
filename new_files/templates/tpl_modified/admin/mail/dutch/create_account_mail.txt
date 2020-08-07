@@ -1,0 +1,15 @@
+
+
+{if $GENDER == 'm'}Geachte heer{elseif $GENDER == 'f'}Geachte mevrouw{else}Hallo{/if} {$NAME},
+
+er is een account voor u aangemaakt, u kunt inloggen in onze shop met de volgende gegevens.
+
+{if $COMMENTS} Opmerkingen: {$COMMENTS}{/if}
+
+Uw inloggegevens voor onze winkel:
+
+E-Mail: {$EMAIL}
+
+Je wachtwoord: {$PASSWORD}
+
+[SIGNATUR]

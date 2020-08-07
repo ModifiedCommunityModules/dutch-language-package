@@ -1,0 +1,9 @@
+
+{if $GENDER == 'm'}Geachte heer{elseif $GENDER == 'f'}Geachte mevrouw{else}Hallo{/if} {$NAME},
+
+U heeft onlangs een voucher besteld in onze online shop,
+die om veiligheidsredenen niet onmiddellijk werd geactiveerd.
+Dit krediet staat nu tot uw beschikking.
+U kunt uw voucher reserveren en per e-mail versturen. De bestelde bon heeft een waarde van {$AMMOUNT}.
+
+[SIGNATUR]

@@ -1,0 +1,10 @@
+{$MESSAGE}
+
+U kunt de coupon inwisselen bij uw bestelling. Voer hiervoor uw couponcode in het veld coupon/couponcode in.
+
+Uw couponcode is: {$COUPON_ID}
+
+Bewaar uw couponcode veilig, dit is de enige manier waarop u kunt profiteren van dit aanbod.
+de volgende keer dat u ons bezoekt op {$WEBSITE}.
+
+[SIGNATUR]

@@ -1,0 +1,23 @@
+<?php
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_TEXT_TITLE', 'Betaling in termijnen');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_TEXT_DESCRIPTION', '<center><b>Masterbetaling (betaling in termijnen)</b></center>');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_TEXT_INFO', '');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_CHECKOUT_TITLE', 'Complete bestelling met betaling in termijnen');
+  
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_STATUS_TITLE', 'Masterpayment activeren (betaling in termijnen)?');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_STATUS_DESC', '');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_INSTALLMENTS_COUNT_TITLE', 'Aantal termijnen');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_INSTALLMENTS_COUNT_DESC', '');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_INSTALLMENTS_FREQ_TITLE', 'Interval van een tarief (in dagen)');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_INSTALLMENTS_FREQ_DESC', '');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_INSTALLMENTS_PERIOD_TITLE', 'Rationaliteit van de tarieven');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_INSTALLMENTS_PERIOD_DESC', '');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_SORT_ORDER_TITLE', 'Weergavevolgorde');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_SORT_ORDER_DESC', '');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_ALLOWED_TITLE', 'Toegestane zones');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_ALLOWED_DESC', 'Geef de zones aan die voor deze module moeten worden toegestaan. (bijv. AT,DE (indien leeg, zijn alle zones toegestaan))');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_ICON_TITLE', 'Toon logo van betaalmethode?');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_ICON_DESC', 'Logo wordt weergegeven bij het overzicht van de betaalmethoden.');
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_TEXT_ERROR_HEADING', ''); 
+  define('MODULE_PAYMENT_MASTERPAYMENT_RATENZAHLUNG_TEXT_ERROR_MESSAGE', 'Betaling in termijnen is helaas niet mogelijk. Kies een andere betalingsmethode.');
+?>

@@ -1,0 +1,17 @@
+----------------------------------------------------------------------------------------
+  Gefeliciteerd, je hebt een voucher ontvangen voor {$AMMOUNT} !
+----------------------------------------------------------------------------------------
+
+Deze voucher werd u toegestuurd door {$FROM_NAME},
+Met het bericht:
+
+{$MESSAGE}
+
+Uw persoonlijke voucher code is {$GIFT_CODE}. U kunt deze bon tijdens het bestelproces boeken.
+
+Om de voucher in te wisselen, klikt u op {$GIFT_LINK}
+
+In het geval dat u problemen heeft met bovenstaande link bij het inwisselen,
+u kunt het bedrag tijdens het bestelproces posten.
+
+[SIGNATUR]

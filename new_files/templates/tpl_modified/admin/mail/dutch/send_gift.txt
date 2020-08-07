@@ -1,0 +1,12 @@
+
+{$MESSAGE}
+  
+Couponwaarde {$AMMOUNT}
+
+Uw couponcode is: {$GIFT_ID}
+
+Om uw voucher te boeken, klikt u op de volgende link - {$GIFT_LINK}.
+
+Als u, tegen de verwachting in, problemen ondervindt met de boeking, bezoek dan onze website {$WEBSITE} en voer de vouchercode handmatig in.
+
+[SIGNATUR]

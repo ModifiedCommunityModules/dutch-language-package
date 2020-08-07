@@ -1,0 +1,23 @@
+
+{if $GENDER == $smarty.const.MALE}Geachte heer{elseif $GENDER == $smarty.const.FEMALE}Geachte mevrouw{else}Hallo{/if} {$NAME},
+
+De status van uw bestelling {if $ORDER_NR}Nr. {$ORDER_NR}{/if} {if $ORDER_DATE}vom {$ORDER_DATE}{/if} is gewijzigd.
+
+{if $ORDER_LINK}Link naar bestelling:
+{$ORDER_LINK} {/if}
+
+{if $NOTIFY_COMMENTS}Opmerkingen en commentaar op uw bestelling:
+{$NOTIFY_COMMENTS}{/if}
+
+Nieuwe status: {$ORDER_STATUS}
+
+{if $PARCEL_COUNT > 0}
+De zending bestaat uit {$PARCEL_COUNT} pakket(ten).
+U kunt de leveringsstatus opvragen door op de volgende pakketnummers te klikken:
+{foreach name=aussen item=tracking_data from=$PARCEL_ARRAY}
+{$tracking_data.tracking_link}
+{/foreach}{/if}
+
+Als u vragen heeft over uw bestelling, kunt u deze e-mail beantwoorden.
+
+[SIGNATUR]
