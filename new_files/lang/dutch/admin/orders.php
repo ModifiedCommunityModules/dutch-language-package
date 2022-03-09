@@ -149,6 +149,9 @@ define('TEXT_SHIPCLOUD_INSURANCE_NO', 'hogere verzekering nee');
 define('TEXT_SHIPCLOUD_INSURANCE_YES', 'hogere verzekering ja');
 define('TEXT_SHIPCLOUD_BULK', 'Bulk');
 define('TEXT_SHIPCLOUD_PARCEL', 'Pakket');
+define('TEXT_SHIPCLOUD_DPAG_WARENPOST', 'Koopwaar post');
+define('TEXT_SHIPCLOUD_DPAG_WARENPOST_UNTRACKED', 'Goederenpost (niet getraceerd)');
+define('TEXT_SHIPCLOUD_DPAG_WARENPOST_SIGNATURE', 'Goederenpost (handtekening)');
 
 define('DOWNLOAD_LABEL', 'Download Label');
 define('CREATE_LABEL', 'Cre&euml;er Label');

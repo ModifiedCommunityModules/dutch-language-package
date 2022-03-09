@@ -18,16 +18,16 @@
  * -----------------------------------------------------------------------------
  */
 
-define('MODULE_PAYMENT_YATEGO_TEXT_DESCRIPTION', 'Zahlung festgelegt durch Yatego');
-define('MODULE_PAYMENT_YATEGO_TEXT_TITLE', 'Zahlung festgelegt durch Yatego');
-define('MODULE_PAYMENT_YATEGO_TEXT_INFO', 'Zahlung festgelegt durch Yatego');
-define('MODULE_PAYMENT_YATEGO_STATUS_TITLE', 'Bezahlungen durch Yatego aktivieren');
-define('MODULE_PAYMENT_YATEGO_STATUS_DESC', 'M&ouml;chten Sie Zahlungen per Yatego akzeptieren?');
-define('MODULE_PAYMENT_YATEGO_ORDER_STATUS_ID_TITLE', 'Bestellstatus festlegen');
-define('MODULE_PAYMENT_YATEGO_ORDER_STATUS_ID_DESC', 'Bestellungen, welche mit diesem Modul gemacht werden, auf diesen Status setzen');
-define('MODULE_PAYMENT_YATEGO_SORT_ORDER_TITLE', 'Anzeigereihenfolge');
-define('MODULE_PAYMENT_YATEGO_SORT_ORDER_DESC', 'Reihenfolge der Anzeige. Kleinste Ziffer wird zuerst angezeigt.');
-define('MODULE_PAYMENT_YATEGO_ZONE_TITLE', 'Zahlungszone');
-define('MODULE_PAYMENT_YATEGO_ZONE_DESC', 'Wenn eine Zone ausgew&auml;hlt ist, gilt die Zahlungsmethode nur f&uuml;r diese Zone.');
-define('MODULE_PAYMENT_YATEGO_ALLOWED_TITLE', 'Erlaubte Zonen');
-define('MODULE_PAYMENT_YATEGO_ALLOWED_DESC', 'Geben Sie <b>einzeln</b> die Zonen an, welche f&uuml;r dieses Modul erlaubt sein sollen. (z.B. AT,DE (wenn leer, werden alle Zonen erlaubt))');
+define('MODULE_PAYMENT_YATEGO_TEXT_DESCRIPTION', 'Betaling bepaald door Yatego');
+define('MODULE_PAYMENT_YATEGO_TEXT_TITLE', 'Betaling bepaald door Yatego');
+define('MODULE_PAYMENT_YATEGO_TEXT_INFO', 'Betaling bepaald door Yatego');
+define('MODULE_PAYMENT_YATEGO_STATUS_TITLE', 'Maak betalingen mogelijk via Yatego');
+define('MODULE_PAYMENT_YATEGO_STATUS_DESC', 'Wilt u betalingen via Yatego accepteren?');
+define('MODULE_PAYMENT_YATEGO_ORDER_STATUS_ID_TITLE', 'Bestelstatus instellen');
+define('MODULE_PAYMENT_YATEGO_ORDER_STATUS_ID_DESC', 'Zet orders die met deze module zijn gemaakt op deze status.');
+define('MODULE_PAYMENT_YATEGO_SORT_ORDER_TITLE', 'Volgorde weergeven');
+define('MODULE_PAYMENT_YATEGO_SORT_ORDER_DESC', 'Toon volgorde. Het kleinste cijfer wordt het eerst weergegeven.');
+define('MODULE_PAYMENT_YATEGO_ZONE_TITLE', 'Betalingszone');
+define('MODULE_PAYMENT_YATEGO_ZONE_DESC', 'Wanneer een zone is geselecteerd, is de betalingsmethode alleen geldig voor die zone.');
+define('MODULE_PAYMENT_YATEGO_ALLOWED_TITLE', 'Toegestane zones');
+define('MODULE_PAYMENT_YATEGO_ALLOWED_DESC', 'Specificeer <b>individueel</b> de zones die voor deze module moeten worden toegestaan. (b.v. AT,DE (indien leeg, zijn alle zones toegestaan)).');

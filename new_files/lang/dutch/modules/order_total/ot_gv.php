@@ -47,4 +47,6 @@
   define('MODULE_ORDER_TOTAL_GV_TAX_CLASS_DESC', 'De volgende BTW tarief als u de bon als creditnota gebruikt.');
   define('MODULE_ORDER_TOTAL_GV_CREDIT_TAX_TITLE', 'Kredietbalans bevat BTW');
   define('MODULE_ORDER_TOTAL_GV_CREDIT_TAX_DESC', 'Crediteer de BTW op de waarde van de voucher');
+  define('MODULE_ORDER_TOTAL_GV_UNALLOWED_PAYMENT_TITLE', 'Niet-toegestane betalingsmodules');
+  define('MODULE_ORDER_TOTAL_GV_UNALLOWED_PAYMENT_DESC', 'Betaalwijzen <strong>NIET</strong> toegestaan voor vouchers.');
 ?>

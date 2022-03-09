@@ -151,6 +151,8 @@ define('HEADING_CAPTION_STATISTIC', 'Statistieken');
 // security check
 
 // DB version check:</strong> Ihre DB muss aktualisiert werden, bitte den <a href="'.DIR_WS_CATALOG.'_installer/">Installer</a> ausf&uuml;hren:');
+define('ERROR_DB_VERSION_UPDATE', '<strong>WAARSCHUWING:</strong> Uw DB moet worden bijgewerkt, gelieve de <a href="'.DIR_WS_CATALOG.'_installer/">installer</a> te draaien.:');
+
 define('ERROR_DB_VERSION_UPDATE_INFO', 'DB moet worden bijgewerkt van Release %s tot %s.');
 
 // EMail check

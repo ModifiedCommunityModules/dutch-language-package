@@ -100,6 +100,7 @@ define('COUPON_CUSTOMERS_HELP', 'Kies de geldige klantgroepen voor deze coupon.'
 
 define('COUPON_ID', 'cID');
 define('BUTTON_DELETE_NO_CONFIRM', 'Verwijderen zonder bevestiging');
+define('TEXT_NO_RESTRICTION', 'Geen beperking');
 define('TEXT_NONE', 'geen beperkingen');
 define('TEXT_COUPON_DELETE', 'Verwijder');
 define('TEXT_COUPON_STATUS', 'Status');

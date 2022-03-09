@@ -57,10 +57,22 @@ define('MODULE_PAYMENT_BILLPAY_LOGPATH_DESC', '');
 define('MODULE_PAYMENT_BILLPAY_GS_HTTP_X_TITLE', 'X_FORWARDED_FOR toestaan');
 define('MODULE_PAYMENT_BILLPAY_GS_HTTP_X_DESC', 'Activeer deze functie als uw winkel in een cloud systeem draait.');
 
+define('MODULE_PAYMENT_BILLPAY_HTTP_X_TITLE', 'X_FORWARDED_FOR toestaan');
+define('MODULE_PAYMENT_BILLPAY_HTTP_X_DESC', 'Activeer deze functie als uw winkel in een cloudsysteem draait.');
+
 // Payment selection texts
 define('MODULE_PAYMENT_BILLPAY_TEXT_BIRTHDATE', 'Geboortedatum');
 define('MODULE_PAYMENT_BILLPAY_TEXT_PHONE', 'Telefoonnummer');
 define('MODULE_PAYMENT_BILLPAY_TEXT_EULA_CHECK',    'Met de overdracht van de gegevens die nodig zijn voor de verwerking van de aankoop op rekening en een identiteits- en kredietcontrole aan de <a href="https://www.billpay.de/endkunden/" target="blank">BillPay GmbH</a> Daar ben ik het mee eens. De <a href="%s" target="_blank">Privacybeleid</a> van BillPay.');
+
+define('MODULE_PAYMENT_BILLPAY_TEXT_EULA_CHECK_CH', '<label for="billpay_eula">Hierbij bevestig ik de <a href="https://www.billpay.de/kunden/agb-ch" target="_blank">Voorwaarden</a> en het <a href="https://www.billpay.de/kunden/agb-ch#datenschutz" target="_blank">Privacybeleid</a> van BillPay GmbH.</label> <br />');
+
+define('MODULE_PAYMENT_BILLPAY_TEXT_EULA_CHECK_SEPA', "Ik ga akkoord met de overdracht van de gegevens die nodig zijn voor de verwerking van de betaling en een identiteits- en kredietcontrole aan <a href='https://www.billpay.de/endkunden/' target='_blank'>BillPay GmbH</a>. Het <a href='%s' target='_blank'>privacybeleid</a> van BillPay.<br/><br/> Ik verleen BillPay een SEPA-domicili&euml;ringsmandaat (<a href='#' class='bpy-btn-details'>details</a>) voor de inning van verschuldigde betalingen en geef mijn kredietinstelling de opdracht om de domicili&euml;ringen te innen.");
+define('MODULE_PAYMENT_BILLPAY_TEXT_EULA_CHECK_SEPA_AT', "Ik ga akkoord met de overdracht van de gegevens die nodig zijn voor de verwerking van de betaling en een identiteits- en kredietcheck aan <a href='https://www.billpay.de/endkunden/' target='_blank'>BillPay GmbH</a>. Het <a href='%s' target='_blank'>privacybeleid</a> van BillPay.<br/><br/> Ik verleen BillPay en de <a href='https://www.privatbank1891.com/' target='_blank'>net-m privatbank 1891 AG</a> een SEPA-incassomachtiging (<a href='#' class='bpy-btn-details'>details</a>) voor het incasseren van openstaande betalingen en geef mijn kredietinstelling de opdracht om de incasso's te incasseren.");
+    
+define('MODULE_PAYMENT_BILLPAY_UTF8_ENCODE_TITLE', 'UTF8 codering inschakelen');
+define('MODULE_PAYMENT_BILLPAY_UTF8_ENCODE_DESC', 'Deactiveer deze optie als u UTF-8 codering gebruikt in uw online winkel.');
+    
 define('MODULE_PAYMENT_BILLPAY_TEXT_ENTER_BIRTHDATE', 'Vul uw geboortedatum in');
 define('MODULE_PAYMENT_BILLPAY_TEXT_ENTER_GENDER', 'Voer uw geslacht in');
 define('MODULE_PAYMENT_BILLPAY_TEXT_ENTER_TITLE', 'Voer uw aanhef in');
@@ -81,9 +93,15 @@ define('JS_BILLPAY_DOBMONTH', '* Voer uw maand van geboorte in.\n\n');
 define('JS_BILLPAY_DOBYEAR', '* Voer uw geboortejaar in.\n\n');
 define('JS_BILLPAY_GENDER', '* Voer uw geslacht in.\n\n');
 
+define('JS_BILLPAY_CODE', '* Voer de BIC in.\n\n');
+define('JS_BILLPAY_NUMBER', '* Gelieve het IBAN in te voeren.\n\n');
+define('JS_BILLPAY_NAME', '* Voer de naam van de rekeninghouder in.\n\n');
+define('JS_BILLPAY_PHONE', '* Voer uw telefoonnummer in.\n\n');
+
 define('MODULE_PAYMENT_BILLPAY_TEXT_ERROR_NUMBER', '* Voer het IBAN in.');
 define('MODULE_PAYMENT_BILLPAY_TEXT_ERROR_CODE', '* Voer de BIC in.');
 define('MODULE_PAYMENT_BILLPAY_TEXT_ERROR_NAME', '* Voer de naam van de rekeninghouder in.');
+define('MODULE_PAYMENT_BILLPAY_TEXT_ERROR_PHONE', '* Voer uw telefoonnummer in.');
 
 define('MODULE_PAYMENT_BILLPAY_TEXT_ERROR_EULA', '* Accepteer de BillPay AGB!');
 define('MODULE_PAYMENT_BILLPAY_TEXT_ERROR_DOB', '* Vul uw geboortedatum in.');

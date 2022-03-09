@@ -58,7 +58,7 @@ define('LANGUAGE_CURRENCY', 'EUR');
 
 define('MALE', 'Dhr ');
 define('FEMALE', 'Mevr ');
-
+define('DIVERSE', 'Duikers');
 /*
  * 
  *  BOXES
@@ -218,6 +218,7 @@ define('IMAGE_BUTTON_UPDATE_CART', 'Winkelwagen updaten');
 define('IMAGE_BUTTON_WRITE_REVIEW', 'Beoordeling schrijven');
 define('IMAGE_BUTTON_ADMIN', 'Admin'); 
 define('IMAGE_BUTTON_PRODUCT_EDIT', 'Produkt bewerken');
+define('IMAGE_BUTTON_SEND', 'Indienen');
 // BOF - vr - 2010-02-20 removed double definition 
 define('IMAGE_BUTTON_LOGIN', 'Aanmelden');
 // EOF - vr - 2010-02-20 removed double definition 
@@ -333,6 +334,7 @@ define('JS_PRICE_TO_MUST_BE_NUM', '* \"Prijs tot\" moet een getal zijn\n\n');
 define('JS_PRICE_TO_LESS_THAN_PRICE_FROM', '* Prijs vanaf moet groter of gelijk prijs vanaf zijn.\n');
 define('JS_INVALID_KEYWORDS', '* Zoekbegrip niet toegelaten\n');
 define('TEXT_LOGIN_ERROR', '<font color="#ff0000"><b>FOUT:</b></font> Geen overeenstemming van het ingevulde \'eMail-Adres\' en/of \'Password\'.');
+define('TEXT_RELOGIN_NEEDED', 'Gelieve opnieuw in te loggen.');
 define('TEXT_NO_EMAIL_ADDRESS_FOUND', '<font color="#ff0000"><b>ATTENTIE:</b></font> Het ingevulde emailadres is niet geregisteerd. Probeert u het nog eens a.u.b.');
 define('TEXT_PASSWORD_SENT', 'Een nieuw wachtwoord is per email verstuurd.');
 define('TEXT_PRODUCT_NOT_FOUND', 'Artikel is niet gevonden!');
@@ -481,6 +483,7 @@ define('TEXT_LINK_TITLE_INFORMATION', 'Informatie');
 define('TEXT_CLOSE_WINDOW', 'Venster sluiten [x]');
 define('TEXT_COUPON_HELP_HEADER', 'Uw tegoedbon is ingewisseld.');
 define('TEXT_COUPON_HELP_NAME', '<br /><br />Naam tegoedbon: %s');
+define('TEXT_COUPON_HELP_SPECIALS', '<br /><br />Uw coupon kan niet worden toegepast op speciale aanbiedingen.');
 define('TEXT_COUPON_HELP_FIXED', '<br /><br />De waarde van de tegoedbon bedraagt %s ');
 define('TEXT_COUPON_HELP_MINORDER', '<br /><br />De minimum bestelwaarde bedraagt ');
 define('TEXT_COUPON_HELP_FREESHIP', '<br /><br />Tegoedbon voor kostenloze verzending');
@@ -586,6 +589,7 @@ define('GV_NO_PAYMENT_INFO', '<div class="infomessage">U kunt uw kredietsaldo ge
 define('GV_ADD_PAYMENT_INFO', '<div class="errormessage">Uw creditsaldo is niet voldoende of kan niet op alle posten worden toegepast om de bestelling volledig te betalen. Kies a.u.b. een extra betaalmethode!</div>');
 
 define('_SHIPPING_FREE','Gratis verzending');
+define('TEXT_INFO_FREE_SHIPPING_COUPON', 'De verzendingskosten worden gedekt door uw coupon.');
 
 define('TEXT_CONTENT_NOT_FOUND', 'Deze pagina is niet gevonden!');
 define('TEXT_SITE_NOT_FOUND', 'Deze pagina is niet gevonden!');

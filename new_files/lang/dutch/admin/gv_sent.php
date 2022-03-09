@@ -42,4 +42,5 @@ define('TEXT_INFO_DATE_REDEEMED', 'Datum Verlost:');
 define('TEXT_INFO_IP_ADDRESS', 'IP-adres:');
 define('TEXT_INFO_CUSTOMERS_ID', 'Klant ID:');
 define('TEXT_INFO_NOT_REDEEMED', 'Niet verlost');
+define('TEXT_INFO_DELETE_INTRO', 'Moet de bon worden geschrapt?');
 ?>

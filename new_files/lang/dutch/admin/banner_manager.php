@@ -24,14 +24,19 @@ define('TABLE_HEADING_STATISTICS', 'Weergaven / Clicks');
 define('TABLE_HEADING_STATUS', 'Status');
 define('TABLE_HEADING_ACTION', 'Actie');
 define('TABLE_HEADING_LANGUAGE', 'Taal');
+define('TABLE_HEADING_SORT', 'Bestel');
+define('TABLE_HEADING_IMAGE', 'Afbeelding');
 
 define('TEXT_BANNERS_TITLE', 'Titel van de Banner:'); 
 define('TEXT_BANNERS_URL', 'Banner-URL:'); 
 define('TEXT_BANNERS_URL_NOTE', 'URL-doel bij het klikken op de banner.'); 
+define('TEXT_BANNERS_REDIRECT', 'Rechtstreekse koppeling:'); 
+define('TEXT_BANNERS_REDIRECT_NOTE', 'De banner is direct gelinkt aan de opgegeven banner URL en niet met behulp van "redirect.php?action=banner&amp;goto=xxx".<br /><strong>ATTENTIE:</strong> "Advertenties / klikken" kunnen niet meer geteld worden wanneer "Direct linken" geactiveerd is!'); 
 define('TEXT_BANNERS_GROUP', 'Banner-Groep:'); 
 define('TEXT_BANNERS_NEW_GROUP', ', of geef een nieuwe banner groep in hieronder'); 
 define('TEXT_BANNERS_NEW_GROUP_NOTE', 'Om een Banner in het sjabloon weer te geven, moet het sjabloon worden uitgebreid<br/>Exemplaar: Banner Group banner , de banner kan worden weergegeven in de template in de index.html met ${BANNER}');
 define('TEXT_BANNERS_IMAGE', 'Afbeelding:'); 
+define('TEXT_BANNERS_IMAGE_MOBILE', 'Mobiel beeld (bestand):'); 
 define('TEXT_BANNERS_IMAGE_LOCAL', ', of geef een lokaal bestand in hieronder'); 
 define('TEXT_BANNERS_IMAGE_TARGET', 'Afbeelding doel (Opslaan als):'); 
 define('TEXT_BANNERS_HTML_TEXT', 'HTML Tekst:');
@@ -55,6 +60,8 @@ define('TEXT_BANNERS_DATA', 'D<br />A<br />T<br />A');
 define('TEXT_BANNERS_LAST_3_DAYS', 'Afgelopen 3 Dagen');
 define('TEXT_BANNERS_BANNER_VIEWS', 'Banner Views');
 define('TEXT_BANNERS_BANNER_CLICKS', 'Banner Clicks');
+define('TEXT_BANNERS_SORT', 'Bestel:');
+define('TEXT_BANNERS_SORT_NOTE', 'De volgorde heeft alleen invloed op dynamische sliders en niet op statische banners.');
 
 define('TEXT_INFO_DELETE_INTRO', 'Weet u zeker dat u deze banner wilt verwijderen?');
 define('TEXT_INFO_DELETE_IMAGE', 'Bannerafbeelding verwijderen');

@@ -107,7 +107,7 @@ define('CSS_IMAGE_BUTTON_UPDATE_ICON_RIGHT', '');
 define('CSS_IMAGE_BUTTON_UPDATE_ICON_LEFT', '<i class="fas fa-sync-alt"></i>');
 
 
-define('CSS_IMAGE_BUTTON_UPDATE_CART_TEXT', 'Update');
+define('CSS_IMAGE_BUTTON_UPDATE_CART_TEXT', 'Bijwerken');
 //define('CSS_IMAGE_BUTTON_UPDATE_CART_TITLE', '');
 define('CSS_IMAGE_BUTTON_UPDATE_CART_ICON_RIGHT', '');
 define('CSS_IMAGE_BUTTON_UPDATE_CART_ICON_LEFT', '<i class="fas fa-sync-alt"></i>');
@@ -143,7 +143,7 @@ define('CSS_IMAGE_BUTTON_PRINT_ICON_RIGHT', '');
 define('CSS_IMAGE_BUTTON_PRINT_ICON_LEFT', '<i class="fas fa-print"></i>');
 
 
-define('CSS_IMAGE_BUTTON_CHECKOUT_TEXT', 'Zur Kasse');
+define('CSS_IMAGE_BUTTON_CHECKOUT_TEXT', 'Kassa');
 //define('CSS_IMAGE_BUTTON_CHECKOUT_TITLE', '');
 define('CSS_IMAGE_BUTTON_CHECKOUT_ICON_RIGHT', '<i class="fas fa-angle-right"></i>');
 define('CSS_IMAGE_BUTTON_CHECKOUT_ICON_LEFT', '<i class="fas fa-credit-card"></i>');

@@ -24,9 +24,11 @@ define('LINK_INFO_TEXT', '<p>Met deze functie kunt u overbodige artikelafbeeldin
 - /images/product_images/thumbnail_images<br/>
 <p>kan van de webserver worden verwijderd als er geen verwijzing meer is naar deze artikelafbeeldingen in de database.<br/> Als een afbeelding door geen enkel product meer wordt gebruikt, kan de afbeelding veilig van de webserver worden verwijderd.</p><br/>');
 define('LINK_ORIGINAL', 'Oude originele afbeeldingen verwijderen');
-define('LINK_INFO', 'Oude info-afbeeldingen verwijderen');
-define('LINK_THUMBNAIL', 'Verwijderen van oude miniatuurafbeeldingen');
 define('LINK_POPUP', 'Oude pop-up afbeeldingen verwijderen');
+define('LINK_INFO', 'Oude info-afbeeldingen verwijderen');
+define('LINK_MIDI', 'Oude Midi-afbeeldingen verwijderen');
+define('LINK_THUMBNAIL', 'Verwijderen van oude miniatuurafbeeldingen');
+define('LINK_MINI', 'Oude minifoto\'s verwijderen');
 define('LINK_MESSAGE', 'Overbodige artikelafbeeldingen uit de directory "/images/product_images/%s_images" ');
 define('LINK_MESSAGE_NO_DELETE', 'Er zijn geen overbodige artikelafbeeldingen toegevoegd aan de "/images/product_images/%s_images" gevonden.');
 ?>

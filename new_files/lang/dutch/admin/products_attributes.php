@@ -46,4 +46,21 @@ define('TEXT_INFO_EDIT_VALUE_INTRO', 'Gelieve alle nodige wijzigingen aan te bre
 define('TEXT_INFO_HEADING_DELETE_VALUE', 'Waarde verwijderen');
 define('TEXT_INFO_DELETE_VALUE_INTRO', 'Weet u zeker dat u deze waarde wilt verwijderen?');
 define('TEXT_DISPLAY_NUMBER_OF_VALUES', 'De weergegeven waarden zijn <b>%d</b> tot <b>%d</b> (van totaal <b>%d</b> waarden)');
+
+define('TITLE_EDIT','Attributen bewerken');
+define('SORT_ORDER','Bestel');
+define('ATTR_MODEL','Punt nr.');
+define('ATTR_STOCK','Kamp');
+define('ATTR_WEIGHT','Gewicht');
+define('ATTR_PREFIXWEIGHT','Prafix gewicht');
+define('ATTR_PRICE','Prijs');
+define('ATTR_PREFIXPRICE','Prafix Prijs');
+define('DL_COUNT','M&ouml;gl. Downloads:');
+define('DL_EXPIRE','Downloadtijd (dagen):');
+define('TEXT_OPTION_ID', 'Opties ID');
+define('TEXT_OPTION_NAME', 'Naam optie');
+define('TEXT_SORTORDER', 'Sorteren');
+define('ATTR_EAN', 'GTIN/EAN');
+define('ATTR_SAVE_ACTIVE', 'Uitgebreide attributen opslaan');
+define('ATTR_VPE','PU');
 ?>

@@ -115,7 +115,7 @@ define('ML_LABEL_MORE_MODULES', 'Extra marktplaatsen');
 define('ML_LABEL_SAVED_SUCCESSFULLY', 'Met succes gered');
 define('ML_LABEL_COPYLEFT', 'Copyright &copy; 2010-'.date('Y').' RedGecko GmbH. All rights reserved.');
 define('ML_LABEL_SOLD_OUT', 'niet voorradig');
-define('ML_LABEL_ARTICLE_NUMBER', 'Artikelnummer');
+define('ML_LABEL_ARTICLE_NUMBER', 'Artikel nummer');
 define('ML_LABEL_DETAILS', 'Details');
 
 
@@ -173,6 +173,7 @@ define('ML_LABEL_TAX_FREE', 'belastingvrij');
 define('ML_LABEL_UPDATE', 'Update (ontvang de nieuwste versie van de magnalister plugin)');
 define('ML_MESSAGE_BEFORE_UPDATE_TITLE', 'magnalister Update');
 define('ML_MESSAGE_BEFORE_UPDATE_TEXT', 'De magnalister plugin wordt nu ge&uuml;pdatet naar de nieuwste versie. Dit proces duurt 1-3 minuten.');
+define('ML_MESSAGE_UPDATE_DISABLED_GAMBIOCLOUD', 'De magnalister update functie is gedeactiveerd voor Gambio Cloud: in dit geval wordt magnalister regelmatig bijgewerkt door Gambio. Indien u vragen heeft, kunt u contact opnemen met support@magnalister.de');
 define('ML_MESSAGE_BEFORE_XTMC_UPDATE_TITLE', 'xt:MultiConnect Update');
 define('ML_MESSAGE_BEFORE_XTMC_UPDATE_TEXT', 'De xt:MultiConnect plugin wordt nu bijgewerkt naar de nieuwste versie. Dit proces duurt 1-3 minuten.');
 define('ML_LABEL_IMPORT_ORDERS', 'Importorders');
@@ -345,7 +346,9 @@ define('ML_TEXT_LISTING_ALMOST_EMPTY', 'Slechts %s%% van uw maandelijkse uploads
 	U kunt uw magnalister gemakkelijk upgraden<a target="_blank" href="'.MAGNA_PUBLIC_SERVER.'frontend/login.php/rateupgrade:%d" title="service plan">dienstplan</a>met terugwerkende kracht tot het begin van de maand.');
 define('ML_TEXT_LISTING_GOING_TO_EXCEED', 'U bent bezig om uw maandelijkse inclusieve lijsten met %d te overschrijden. In het geval van overschrijding van uw uploads/importen, zullen we extra kosten in rekening brengen <a target="_blank" href="'.MAGNA_PUBLIC_SERVER.'frontend/rate.php" title="fees">fees</a><br/>
 	U kunt uw magnalister gemakkelijk upgraden<a target="_blank" href="'.MAGNA_PUBLIC_SERVER.'frontend/login.php/rateupgrade:%d" title="service plan">serviceplan</a> met terugwerkende kracht tot het begin van de maand.');
-define('ML_TEXT_CURRENT_MODULE_NOT_BOOKED', 'Om <b>%s</b> te activeren, gelieve in te loggen  
+	define('ML_TEXT_LISTING_GOING_TO_EXCEED_GAMBIO_CLOUD', 'Opgelet, u overschrijdt de uploadlimiet van uw tarief (20 productuploads & bestellingen gecombineerd per maand). Als u doorgaat met het uploaden van het product, zal dit tarief in rekening worden gebracht. Onze normale prijzen voor het door u gekozen tarief (Business, Ultimate, Flat) zullen dan van toepassing zijn.');
+
+	define('ML_TEXT_CURRENT_MODULE_NOT_BOOKED', 'Om <b>%s</b> te activeren, gelieve in te loggen  
     <a href="'.MAGNA_PUBLIC_SERVER.'frontend/login.php" title="login" target=_blank">'.str_replace('http://', 'www.', MAGNA_PUBLIC_SERVER).'hier in te loggen</a>. Kies na het inloggen voor "Mijn winkels" en solliciteer voor meer marktplaatsen');
 define('ML_TEXT_MORE_MODULES', '<p>Je hebt niet meer marktplaatsen aangevraagd, of er zijn op dit moment geen marktplaatsen meer beschikbaar.</p>
 	<p>Om meer marktplaatsen aan te vragen, ga naar www.magnalister.com, 
@@ -472,6 +475,7 @@ define('ML_GENERIC_CURRENCY_EUR', 'EUR');
 define('ML_GENERIC_LABEL_PRICE', 'Berekende prijs <small>(zoals geconfigureerd)</small>');
 define('ML_GENERIC_IMAGES', 'Foto\'s');
 define('ML_GENERIC_NO_IMAGE', 'Geen beeld');
+define('ML_GENERIC_TAKE_ALL_IMAGES', 'Neem alle foto\'s');
 define('ML_GENERIC_PRODUCTDESCRIPTION', 'Itembeschrijving');
 define('ML_GENERIC_MY_PRODUCTDESCRIPTION', 'Mijn artikelomschrijving');
 define('ML_GENERIC_CHECKINDATE', 'Upload datum');
@@ -515,6 +519,10 @@ define('ML_GENERIC_INVENTORY_STATUS_PENDING_UPDATE', 'Item-update in uitvoering'
 define('ML_GENERIC_INVENTORY_STATUS_ACTIVE', 'Actief');
 define('ML_GENERIC_INVENTORY_STATUS_TRANSFERRED', 'Overgedragen');
 define('ML_GENERIC_INVENTORY_STATUS', 'Status');
+define('ML_GENERIC_STATUS_PRODUCT_IS_CREATED', 'Het product is gemaakt');
+define('ML_GENERIC_STATUS_PRODUCT_IS_UPDATED', 'Product is bijgewerkt');
+define('ML_GENERIC_STATUS_OFFER_IS_UPDATED', 'Aanbod bijgewerkt');
+define('ML_GENERIC_STATUS_OFFER_IS_CREATED', 'Aanbod is gecre&euml;erd');
 define('ML_GENERIC_FILTER_MP_SYNC_DELETED', 'Synchroniseer verwijderde items');
 define('ML_GENERIC_FILTER_MP_SYNC_INVENTORY', 'Artikelen synchroniseren met Marktplaats Inventarisatie');
 define('ML_GENERIC_AUTOMATIC_ORDER', 'Deze marktplaatsorder is automatisch ge&iuml;mporteerd door magnalister.');
@@ -591,6 +599,33 @@ define('ML_AMAZON_LABEL_APPLY_ATTRIBUTES', 'Attributen');
 define('ML_AMAZON_LABEL_APPLY_BROWSENODES', 'Browsenodes');
 define('ML_AMAZON_LABEL_APPLY_BULLETPOINTS', 'Kogelpunten');
 define('ML_AMAZON_LABEL_APPLY_KEYWORDS', 'Algemene Trefwoorden');
+define('ML_AMAZON_INFO_APPLY_KEYWORDS', '<h3>Optimaliseer product ranking met Amazon trefwoorden</h3>
+<br>
+Algemene trefwoorden worden gebruikt om de rangschikking te optimaliseren en voor een betere filterbaarheid op Amazon. Ze worden onzichtbaar op het product opgeslagen tijdens de magnalister product upload.
+<br><br>
+<h2>Opties voor de overdracht van algemene trefwoorden</h2>
+1. Gebruik altijd actuele trefwoorden uit de webshop (meta keywords): 
+<br><br>
+De trefwoorden worden ontleend aan het meta keywords veld van het betreffende product in de webwinkel en doorgegeven aan Amazon.
+<br><br>
+2. Algemene trefwoorden handmatig invoeren in magnalister: 
+<br><br>
+Als u geen gebruik wilt maken van de meta keywords die zijn opgeslagen op het web shop product, kunt u uw eigen keywords in dit vrije tekst veld invoeren.
+<br><br>
+<b>Belangrijke opmerkingen:</b>
+<br><ul>
+<li>Als u trefwoorden handmatig invoert, scheid ze dan met een spatie (geen komma!) en zorg ervoor dat u het totaal van 250 bytes niet overschrijdt (vuistregel: 1 karakter = 1 byte. Uitzondering: speciale tekens zoals &Auml;, &Ouml;, &Uuml; = 2 bytes).
+</li><li>
+Als de trefwoorden door komma\'s gescheiden zijn in het meta trefwoorden veld van het webshop product, zet magnalister de komma\'s automatisch om in spaties bij het uploaden van het product. De limiet van 250 bytes geldt ook hier.
+</li><li>
+Als het toegestane aantal bytes wordt overschreden, kan Amazon na het uploaden van het product een foutmelding terugsturen, die u kunt bekijken in het foutenlogboek van magnalister (wachttijd maximaal 60 minuten).
+</li><li>
+Overdracht van platina sleutelwoorden: Als u een Amazon platina handelaar bent, informeer dan magnalister support. Wij zullen dan de overdracht van de platina sleutelwoorden activeren. Daarbij gebruikt magnalister de algemene trefwoorden en brengt ze 1:1 over naar Amazon. Algemene trefwoorden en platina trefwoorden zijn dus identiek.
+</li><li>
+Dien verschillende platina sleutelwoorden in: Gebruik de magnalister attribuut matching bij de productvoorbereiding. Om dit te doen, selecteer "Platinum keywords 1-5" uit de lijst van beschikbare Amazon attributen en match het corresponderende webshop attribuut.
+</li><li>
+Naast algemene trefwoorden zijn er andere Amazon-relevante trefwoorden (b.v. thesaurus attribuut trefwoorden, doelgroep trefwoorden of onderwerp trefwoorden) die u ook naar Amazon kunt overbrengen via attribuut matching.
+</li></ul>');
 define('ML_AMAZON_LABEL_APPLY_ADDITIONAL_DETAILS', 'Toevoegingen details (aanbevolen)');
 define('ML_AMAZON_LABEL_APPLY_NOT_PREPARED', 'Niet voorbereid');
 define('ML_AMAZON_LABEL_APPLY_PREPARE_COMPLETE', 'Vul aan:');
@@ -633,6 +668,7 @@ define('ML_AMAZON_TEXT_APPLY_PRODUCTS_IMAGES', 'Maximaal 9 productafbeeldingen')
 define('ML_AMAZON_TEXT_APPLY_BULLETPOINTS', 'Kenmerken van het product (e.g. &quot;Glanzend oppervlak&quot;, &quot;Gouden knoppen&quot;)<br /><br />U kunt de velden vooraf invullen door in de meta description.<br />Maximum 500 karakters de waarden gescheiden door komma\'s in te voeren.');
 define('ML_AMAZON_TEXT_APPLY_PRODUCTDESCRIPTION', 'Maximaal 2000 tekens. Enkele HTML-tags en attributen zijn toegestaan (deze tellen ook als karakters).');
 define('ML_AMAZON_TEXT_APPLY_KEYWORDS', 'Zoektermen voor betere zoekresultaten op Amazon. Deze zoektermen kunnen vooraf worden ingevuld in de product-editor. U kunt 5 termen, gescheiden door een komma, invoeren in het veld met de meta-keywords. Maximaal toegestane 50 tekens.');
+define('ML_AMAZON_FROMWEBSHOP_APPLY_KEYWORDS', 'Gebruik altijd actuele trefwoorden uit de webshop (meta keywords)');
 define('ML_AMAZON_TEXT_APPLY_DATA_INCOMPLETE', 'Sommige verplichte velden waren niet ingevuld. Gelieve aan te passen door te klikken op "'.
 	ML_AMAZON_BUTTON_PREPARE.'"');
 define('ML_AMAZON_TEXT_APPLY_REQUIERD_EAN', 'Niet nodig, wanneer variaties worden opgeslagen met EAN');
@@ -827,12 +863,24 @@ define('ML_IDEALO_INFO_CHECKOUT_ACTIVE', 'Activeer Idealo Checkout om bestelling
 define('ML_IDEALO_LABEL_CHECKOUT_ACTIVE_2', 'idealiter gebruik maken van directe aankoop voor geselecteerde producten');
 define('ML_IDEALO_LABEL_PAYMENT_METHOD', 'Betalingswijze');
 define('ML_IDEALO_INFO_PAYMENT_METHOD', 'Betaalmethode wordt alleen toegepast als u Idealo Checkout activeert. U kunt dan aangeven welke betaalmethode u wilt gebruiken voor een bepaald product.');
-define('ML_IDEALO_LABEL_SHIPPING_METHOD', 'Versandart');
+define('ML_IDEALO_LABEL_SHIPPING_METHOD', 'Verzendmethode');
 define('ML_IDEALO_INFO_SHIPPING_METHOD', 'De verzendmethode wordt alleen toegepast als u Idealo Checkout activeert. U kunt dan aangeven welke verzendmethode u gebruikt voor een bepaald product.');
 define('ML_IDEALO_LABEL_SHIPPING_COUNTRY', 'Verzending naar');
 define('ML_IDEALO_LABEL_SHIPPING_COST', 'Verzendkosten');
 define('ML_IDEALO_INFO_SHIPPING_COST', 'Het zal eerst proberen de verzendkosten te berekenen uit de verzendmethode. Als dit geen resultaat oplevert, wordt de hier aangegeven waarde gebruikt.
 Als de verzendkostenmodule "Forfaitair tarief" wordt gebruikt, wordt ook de hier aangegeven waarde gebruikt.');
+define('ML_IDEALO_LABEL_DELIVERY_TIME', 'Leveringstermijn');
+define('ML_IDEALO_LABEL_DELIVERY_TIME_FROM_SHOP', 'Neem altijd van de webshop');
+define('ML_IDEALO_LABEL_SPEDITION_INFO', 'Als u 0,00 stort, wordt de functie niet geactiveerd op de marktplaats');
+define('ML_IDEALO_LABEL_DIRECT_CHECKOUT', 'Directe aankoop');
+define('ML_IDEALO_LABEL_DIRECT_FULFILLMENT_TYPE', 'Verzendmethode');
+define('ML_IDEALO_LABEL_DIRECT_TWO_MAN_HANDLING_FEE', 'Directe aankoop expediteur - leveringskosten tot de plaats van installatie');
+define('ML_IDEALO_LABEL_DIRECT_DISPOSAL_FEE', 'Directe aankoop vrachtvervoer - kosten voor het meenemen van oude apparaten');
+define('ML_IDEALO_OPTION_DIRECT_FULFILLMENTTYPE_SPEDITION', 'Expeditie van goederen');
+define('ML_IDEALO_OPTION_DIRECT_FULFILLMENTTYPE_PACKETDIENST', 'Pakketdienst');
+define('ML_IDEALO_OPTION_DIRECT_FULFILLMENTTYPE_DOWNLOAD', 'Download');
+define('ML_IDEALO_LABEL_DELIVERY_TIME_MANUAL', 'Vast tarief van rechts');
+define('ML_IDEALO_INFO_DELIVERY_TIME', 'Gelieve de leveringstermijnen zo nauwkeurig mogelijk op te geven. Onlinehandelaren zijn wettelijk verplicht de consument te informeren wanneer de goederen zullen aankomen door de levertijd aan te geven. Als gevolg daarvan zijn de nog steeds gangbare vermeldingen zoals "klaar voor verzending" of "beschikbaar voor levering" niet langer toegestaan. Evenmin mogen relativerende toevoegingen zoals "waarschijnlijk" of "in de regel" worden gebruikt. Vermeld daarom indien mogelijk de levertijd in werkdagen, bijvoorbeeld "levering binnen 1-3 werkdagen".');
 define('ML_IDEALO_LABEL_SHIPPING_CURRENCY', 'EUR');
 define('ML_IDEALO_TEXT_APPLY_PRODUCTS_IMAGES', 'Maximaal 3 productafbeeldingen');
 define('ML_IDEALO_PAYMENTMETHOD_OPTION_GROUPS', '
@@ -961,6 +1009,8 @@ define('ML_EBAY_LABEL_PRODUCT_IN_REVIEW', 'Wordt gecontroleerd door eBay');
 define('ML_EBAY_LABEL_PRODUCT_APPLIED', 'Catalogus product, handmatig aangevraagd');
 define('ML_EBAY_LABEL_PRODUCT_AUTO_APPLIED', 'Catalogus product, automatisch aangevraagd');
 define('ML_EBAY_LABEL_PRODUCT_REJECTED', 'Afgekeurd door eBay'); /* deprecated */
+define('ML_EBAY_VAT', 'BTW-tarief');
+define('ML_EBAY_VAT_HINT', 'BTW-tarief voor dit product in %.');
 
 /* Inventory View */
 define('ML_EBAY_INVENTORY_STATUS_PENDING_UPLOAD', 'Artikel wordt geschrapt<br /><span class="small">Verwerking bij magnalister</span>');
@@ -1116,6 +1166,7 @@ define('ML_EBAY_NO_HITCOUNTER', 'geen');
 define('ML_EBAY_BASIC_HITCOUNTER', 'Eenvoudigweg');
 define('ML_EBAY_RETRO_HITCOUNTER', 'Retrostijl');
 define('ML_EBAY_HIDDEN_HITCOUNTER', 'verborgen');
+define('ML_EBAY_ONLY_B2B_CATS', '<b>Note</b>: U hebt in de configuratie geselecteerd dat u alleen aan zakelijke klanten wilt verkopen. Daarom worden alleen categorie&euml;n weergegeven die dit toestaan.');
 define('ML_EBAY_NOTE_VARIATIONS_ENABLED', '<div class="successBox"><b>Noot:</b>: Voor deze categorie worden varianten ge&uuml;pload, indien gewenst (configuratie-instelling) en beschikbaar.</div>');
 define('ML_EBAY_NOTE_VARIATIONS_DISABLED', '<div class="errorBox"><b class="error">Noot:</b>: Voor deze categorie biedt eBay geen varianten aan, alleen het hoofdartikel wordt ge&uuml;pload.</div>');
 define('ML_EBAY_NOTE_PRODUCT_REQUIRED_SHORT', '<b>Noot:</b>: Voor deze categorie is een specificatie van de eBay-product-ID verplicht, voor details zie infopictogram.');
@@ -1175,7 +1226,7 @@ define('ML_EBAY_BUTTON_TOKEN_NEW', 'Aanvraag / wijziging penning');
 
 define('ML_EBAY_SUBMIT_ADD_TEXT_ZERO_STOCK_ITEMS_REMOVED','Artikelen zonder voorraad werden weggelaten.');
 define('ML_EBAY_SUBMIT_ADD_TEXT_ZERO_STOCK_ITEMS_ONLY_UPDATED','Artikelen zonder voorraad worden niet opnieuw geüpload (alleen ge&uuml;pdatet als ze al aanwezig zijn).');
-define('ML_EBAY_SUBMIT_ADD_TEXT_ASYNC_EXPLANATION','<b>Opmerking over verwerkingstijd en activering:</b><br /><br />De verwerking kan enkele seconden tot 6 uur duren:<br /><br />Artikelen zonder eBay-catalogusverplichting: eBay heeft 5-10 seconden per artikel nodig voor de verwerking (incl. fotoverpakking). <br /><br />eBay-catalogusitems (ePID-vereiste): Het verwerken en controleren kan op eBay 4-6 uur duren, vooral wanneer een nieuw product (automatisch) aan de eBay-catalogus wordt voorgesteld.<br /><br />U kunt de verwerkingsstatus op elk gewenst moment bekijken in het tabblad "Inventarisatie". Eventuele foutmeldingen na de verwerking worden weergegeven in het tabblad "Foutenlogboek".');
+define('ML_EBAY_SUBMIT_ADD_TEXT_ASYNC_EXPLANATION','<b>Opmerking over verwerkingstijd en activering:</b><br /><br />De verwerking kan enkele seconden tot 6 uur duren:<br /><br />Artikelen zonder eBay-catalogusverplichting: eBay heeft 5-10 seconden per artikel nodig voor de verwerking (incl. fotoverpakking).<br /><br />eBay-catalogusitems (ePID-vereiste): Het verwerken en controleren kan op eBay 4-6 uur duren, vooral wanneer een nieuw product (automatisch) aan de eBay-catalogus wordt voorgesteld.<br /><br />U kunt de verwerkingsstatus op elk gewenst moment bekijken in het tabblad "Inventarisatie". Eventuele foutmeldingen na de verwerking worden weergegeven in het tabblad "Foutenlogboek".');
 
 define('ML_EBAY_ERROR_VARMATCH_FAILED', 'Geen van de varianten kon correct worden toegewezen. Controleer de vermeldingen voor eBay-attributen (varianten)');
 
@@ -1188,6 +1239,7 @@ define('ML_EBAY_PUI_MSG_TO_BUYER', "eBay-factuuraankoop, eBay-bericht aan de kla
 
 define('ML_LABEL_EBAY_SALES_RECORD_NUMBER', 'Recordaantal verkopen');
 define('ML_EBAY_PP_TRANSACTION_ID', 'PayPal Transactie-ID');
+define('ML_EBAY_ORDER_DETAIL_INFORMATION_TO_EBAY_SELLER_HUB', 'Klik op deze <a href="%s">link</a> om de (gedeeltelijke) terugbetaling van een bestelling handmatig te verwerken via de eBay-verkopershub.');
 
 //HERE
 
@@ -1339,6 +1391,8 @@ Verander de EAN\'s zodat geen van hen meer dan één keer wordt toegewezen.');
 define('ML_HITMEISTER_UNIT_ATTRIBUTES', 'Algemene instellingen');
 define('ML_HITMEISTER_PRODUCT_DETAILS', 'Productdetails');
 define('ML_HITMEISTER_ITEM_NAME_TITLE', 'Titel');
+define('ML_HITMEISTER_KEYWORDS', 'Trefwoorden');
+define('ML_HITMEISTER_KEYWORDS_INFO', 'Zoekwoorden voor prijszoekmachines (niet weergegeven, alleen opgeslagen in de metadata), flowtekst, tot 1024 tekens');
 define('ML_HITMEISTER_SUBTITLE', 'Ondertitels');
 define('ML_HITMEISTER_DESCRIPTION', 'Beschrijving');
 define('ML_HITMEISTER_PRICE', 'real.de Prijs');
@@ -1467,6 +1521,7 @@ define('ML_CDISCOUNT_LABEL_ORDER_ID', 'Cdiscount-Bestelnummer');
 define('ML_CDISCOUNT_IS_PORN', 'Porno');
 define('ML_CDISCOUNT_AGE_RATING', 'Leeftijdsgrens');
 define('ML_CDISCOUNT_CONDITION', 'Status');
+define('ML_CDISCOUNT_MAX_4_IMAGES', 'Cdiscount staat het uploaden van maximaal 4 afbeeldingen per item toe.<br/><br/>Daarnaast geldt het volgende: Voor elke geüploade variant zijn ook maximaal vier afbeeldingen toegestaan.');
 
 define('ML_CDISCOUNT_SHIPPINGTYPE_STANDARD', 'Verzendstandaard');
 define('ML_CDISCOUNT_SHIPPINGTYPE_REGISTERED', 'Verzending geregistreerd');
@@ -1697,7 +1752,7 @@ define('ML_RATE_XTCM_LIGHT6', 'xt:MultiConnect Licht');
 define('ML_RATE_XTCM_PREMIUM6', 'xt:MultiConnect Premium');
 
 define('ML_RATE_SWITCH', '%s &ndash; geldig tot %s. Daarna verzocht om omrekening naar tarief %s.');
-define('ML_RATE_SWITCH_TRIAL', 'Testperiode tot %s. Beoordeel volgens de testperiode: %s ');
+define('ML_RATE_SWITCH_TRIAL', 'Testperiode tot %s. Beoordeel volgens de testperiode: %s');
 define('ML_RATE_END', '%s. Contract opgezegd tegen de %s.');
 define('ML_RATE_CONTINUE', '%s');
 
@@ -1869,6 +1924,11 @@ define('ML_HOOD_TEXT_SET_PROD_INFOS', 'De productinformatie kan alleen worden ge
 
 define('ML_HOOD_SUBMIT_ADD_TEXT_ZERO_STOCK_ITEMS_REMOVED','Artikelen zonder voorraad werden weggelaten.'); /* deprecated */
 
+/* Nur bezahlte Bestellungen importieren */
+define('ML_HOOD_IMPORTONLYPAID_LABEL', 'Importeer alleen betaalde<br />bestellingen');
+define('ML_HOOD_IMPORTONLYPAID_DESC', 'Door de functie te activeren worden orders alleen ge&iuml;mporteerd als ze als "betaald" zijn gemarkeerd op Hood. Fur Zahlarten wie PayPal, Amazon Pay oder Sofortuberweisung erfolgt das automatisch, sonst muss die Zahlung auf Hood entsprechend markiert werden.  </p> <p> <strong>Voordeel:</strong> De ge&iuml;mporteerde bestelling kan onmiddellijk worden verzonden.');
+define('ML_HOOD_IMPORTONLYPAID_RIGHTLABEL', 'Alleen importeren indien bestelling volledig betaald');
+
 /* Status-Aenderung bei Bestellungen */
 define('ML_HOOD_ORDER_PAID', "magnalister-Verwerking:\nBetaling ontvangen door Hood.");
 
@@ -1892,7 +1952,7 @@ define('ML_DAWANDA_LABEL_PRODUCTTYPE', 'Aard van het product');
 define('ML_DAWANDA_UPLOAD_EXPLANATION', '<b>Noot:</b>:<br /><br />
 De marktplaats verwerkt nu uw gegevens en controleert op inhoudelijke fouten.
 <br /><br />
- De verwerking van de artikelen kan tot 24 uur duren.');
+De verwerking van de artikelen kan tot 24 uur duren.');
 
 /* Bepado */
 define('ML_BEPADO_LABEL', 'Bepado');
@@ -1961,6 +2021,8 @@ define('ML_RICARDO_ERROR_CATEGORY', 'Voer een categorie in.');
 define('ML_RICARDO_ERROR_TITLE', 'Voer een titel in.');
 define('ML_RICARDO_ERROR_DESCRIPTION', 'Voer een beschrijving van het item in.');
 define('ML_RICARDO_ERROR_WARRANTY', 'Geef een beschrijving van de garantie.');
+define('ML_RICARDO_ERROR_GTIN', 'Voer een GTIN code in.');
+define('ML_RICARDO_ERROR_IMAGES', 'Geef een afbeelding.');
 define('ML_RICARDO_ERROR_SHIPPING', 'Voer een beschrijving van de verzending in.');
 define('ML_RICARDO_ERROR_START_PRICE', 'De startprijs moet groter zijn dan nul.');
 define('ML_RICARDO_ERROR_INCREMENT', 'De verhoging moet groter zijn dan nul');
@@ -2077,4 +2139,59 @@ define('ML_ETSY_LISTING_ID', 'Etsy ListingId');
 define('ML_ETSY_LABEL_TITLE', 'Etsy Titel');
 define('ML_TITLE_ETSY_WARNING_ZERO_STOCK_COST', 'Automatische synchronisatie met nulvoorraad (aanbevolen)');
 define('ML_TEXT_ETSY_WARNING_ZERO_STOCK_COST', 'Deze optie zorgt ervoor dat uw aanbiedingen opnieuw worden geactiveerd als de voorraad in de webshop > 0 is. Als het voorraadniveau wordt gewijzigd naar < 1, worden uw aanbiedingen gedeactiveerd. Voor het reactiveren van aanbiedingen wordt door Etsy kosten in rekening gebracht.');
+/* Google Shopping */
+define('ML_GOOGLESHOPPING_PRICE', 'Prijs');
+define('ML_GOOGLESHOPPING_DESCRIPTION', 'Beschrijving');
+define('ML_GOOGLESHOPPING_BRAND', 'Merk');
+define('ML_GOOGLESHOPPING_LABEL_GOOGLESHOPPING_PRICE', 'Berekende prijs <small>(volgens configuratie)</small>');
+define('ML_GOOGLESHOPPING_PRODUCT_DETAILS', 'Productgegevens');
+define('ML_GOOGLESHOPPING_ERROR_CATEGORY', 'Voer een categorie in.');
+define('ML_GOOGLESHOPPING_ITEM_NAME_TITLE', 'Titel');
+define('ML_GOOGLESHOPPING_SUBTITLE', 'Ondertitel');
+define('ML_GOOGLESHOPPING_LABEL_ONLY_NOT_PREPARED', 'Alleen artikelen die nog niet klaar zijn');
+define('ML_GOOGLESHOPPING_BUTTON_PREPARE', 'Bereid  voor.');
+define('ML_GOOGLESHOPPING_LABEL_PREPARE', 'Type voorbereiding');
+define('ML_GOOGLESHOPPING_BUTTON_UNPREPARE', 'Annuleer voorbereiding voor volledige selectie');
+define('ML_GOOGLESHOPPING_BUTTON_RESET_DESCRIPTION', 'Annuleer voorbereiding voor item beschrijving');
+define('ML_GOOGLESHOPPING_COMMENT', 'Aantekeningen bij uw artikel');
+define('ML_GOOGLESHOPPING_PREORDER', 'Voorbestelling');
+define('ML_GOOGLESHOPPING_UPLOAD_EXPLANATION', 'In de regel worden de geüploade producten binnen twee uur op Google geplaatst. Daarna zijn de items terug te vinden in uw Google Merchant account.');
+define('ML_GOOGLESHOPPING_NEW_ITMES', 'Cre&euml;er nieuwe producten');
+define('ML_GOOGLESHOPPING_BUTTON_TOKEN_NEW', 'Aanvragen / wijzigen van tokens');
+define('ML_ERROR_NOTE_CATEGORY_NOT_SELECTED', 'Kies een categorie.');
+define('ML_METRO_PRODUCT_DETAILS', 'Aanbiedingsinstellingen');
+define('ML_METRO_PRODUCT_TITLE', 'Titel');
+define('ML_METRO_PRODUCT_IMAGES', 'Product afbeeldingen');
+define('ML_METRO_SHORTDESCRIPTION', 'Korte beschrijving');
+define('ML_METRO_PRODUCT_GTIN', 'GTIN (Global Trade Item Number)');
+define('ML_METRO_PRODUCT_MANUFACTURER', 'Fabrikant');
+define('ML_METRO_PRODUCT_MPN', 'Artikelnummer van de fabrikant');
+define('ML_METRO_PRODUCT_BRAND', 'Merk');
+define('ML_METRO_PRODUCT_MSRP', 'Adviesverkoopprijs van de fabrikant');
+define('ML_METRO_PRODUCT_KEYFEATURE', 'Belangrijke kenmerken');
+define('ML_METRO_PREPARE_PRODUCT_TITLE_INFO', 'Maximaal 150 tekens');
+define('ML_METRO_PREPARE_PRODUCT_SHORTDESCRIPTION_INFO', 'Korte beschrijving van het product met een samenvatting van de belangrijkste productkenmerken.<br/>Maximaal 150 tekens');
+define('ML_METRO_PREPARE_PRODUCT_DESCRIPTION_INFO', 'Detaillierte und informative Beschreibung des Produkts mit seinen Spezifikationen und Eigenschaften. Details over aanbiedingen, verzending of winkelinformatie zoals prijzen, leveringsvoorwaarden, enz. zijn niet toegestaan. Bitte beachten Sie, dass es nur eine Produktdetailseite pro Produkt gibt, die von allen Verkaufern, die dieses Produkt anbieten, geteilt wird. Fugen Sie keine Hyperlinks, Bilder oder Videos hinzu. Folgende HTML-Tags sind erlaubt: P, B, BR, A, UL, OL, LI, SPAN Maximal 4000 Zeichen');
+define('ML_METRO_PREPARE_PRODUCT_IMAGES_INFO', 'Maximaal 10 productafbeeldingen');
+define('ML_METRO_PREPARE_PRODUCT_GTIN_INFO', 'Bijvoorbeeld: EAN, ISBN, ...<br/>Maximaal 14 tekens');
+define('ML_METRO_PREPARE_PRODUCT_MANUFACTURER_INFO', 'Maximaal 100 tekens');
+define('ML_METRO_PREPARE_PRODUCT_MPN_INFO', 'Maximaal 100 tekens');
+define('ML_METRO_PREPARE_PRODUCT_BRAND_INFO', 'Maximaal 100 tekens');
+define('ML_METRO_PREPARE_PRODUCT_MSRP_INFO', 'Maximaal 100 tekens');
+define('ML_METRO_PREPARE_PRODUCT_KEY_FEATURE_INFO', 'Maximaal 200 tekens per kenmerk');
+define('ML_METRO_PRODUCT_GENERALSETTINGS', 'Algemene instellingen');
+define('ML_METRO_LABEL_SELECT_CATEGORY', 'Marktplaats categorie');
+define('ML_METRO_LABEL_PROCESSINGTIME', 'Verwerkingstijd in werkdagen');
+define('ML_METRO_LABEL_BUSINESSMODEL', 'Stel walgroep in');
+define('ML_METRO_LABEL_FREIGHTFORWARDING', 'Levering door expediteur');
+define('ML_METRO_LABEL_SHIPPINGPROFILE', 'Verzendingskosten profielen');
+define('ML_METRO_STOCK_FOR_METRO', 'METRO-voorraad');
+define('ML_METRO_PRICE_FOR_METRO', 'METRO Prijs');
+define('ML_METRO_LABEL_TITLE', 'METRO Titel');
+define('ML_METRO_LISTING_ID', 'METRO LijstId');
+define('ML_METRO_PRICE_SHOP_METRO', 'Prijs Winkel (bruto) / METRO');
+define('ML_METRO_STOCK_SHOP_METRO', 'Stock Shop / METRO');
+define('ML_METRO_ERROR_GTIN', 'Voer een GTIN code in of controleer of de GTIN code geldig is.');
+define('ML_METRO_STATUS_PRODUCT_IS_PENDING_DELETE', 'Aanbod is geschrapt');
+define('ML_METRO_DELETED_OFFER_PURGE_INFO', 'Verwijderde items worden na 30 dagen uit de database verwijderd.');
 
