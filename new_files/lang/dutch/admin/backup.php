@@ -67,4 +67,11 @@ define('TEXT_REMOVE_COLLATE', "<b>Zonder codering 'COLLATE' en 'DEFAULT CHARSET'
 
 //TEXT_REMOVE_ENGINE
 define('TEXT_REMOVE_ENGINE', "<b>Zonder opslagmotoren 'ENGINE'</b><br> - De verklaringen van de opslagmotor (MyISAM,InnoDB) worden niet ingevoegd.");
+define('TEXT_IMPORT_UTF8_NOTICE', '<b>Attentie:</b> de database is geconverteerd naar UTF-8.');
+define('TEXT_INFO_CHARSET', 'Charset:');
+
+define('TEXT_TABLES_BACKUP_TYPE', '<b>Zekering</b><br> - Welke tabellen moeten worden opgeslagen?');
+define('TEXT_BACKUP_ALL', 'Alle tabellen');
+define('TEXT_BACKUP_CUSTOM', 'Geselecteerde tabellen');
+define('TEXT_TABLES_TO_BACKUP', '<b>De volgende tabellen moeten worden opgeslagen:</b>');
 ?>

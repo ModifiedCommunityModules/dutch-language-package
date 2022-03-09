@@ -23,6 +23,7 @@ define('TABLE_HEADING_FIRSTNAME', 'Voornaam');
 define('TABLE_HEADING_LASTNAME', 'Achternaam');
 define('TABLE_HEADING_ACCOUNT_CREATED', 'Account aangemaakt op');
 define('TABLE_HEADING_ACTION', 'Actie');
+define('TABLE_HEADING_EDIT', 'Bewerken');
 
 define('TEXT_DATE_ACCOUNT_CREATED', 'Account aangemaakt op:');
 define('TEXT_DATE_ACCOUNT_LAST_MODIFIED', 'Laatst Gewijzigd:');
@@ -73,4 +74,12 @@ define('WARNING_CUSTOMER_ALREADY_EXISTS', 'Klantengroep kan niet worden gewijzig
 define('TEXT_INFO_HEADING_STATUS_NEW_ORDER','Nieuwe bestelling');
 define('TEXT_INFO_PAYMENT','Betaling:');
 define('TEXT_INFO_SHIPPING','Verzending:');
+define('TEXT_INFO_NEWSLETTER_AT_REGISTRATION', 'Nieuwsbrief bij inschrijving:');
+define('TEXT_INFO_NEWSLETTER_STATUS', 'Nieuwsbrief ingeschreven:');
+
+define('TEXT_ACTIVE_ELEMENT', 'Actief element');
+define('TEXT_MARKED_ELEMENTS', 'Gemarkeerde elementen');
+define('TEXT_INFO_HEADING_DELETE_ELEMENTS', 'Maak elementen los');
+define('TEXT_INFO_HEADING_STATUS_ELEMENTS', 'Elementen klantengroep');
+define('TEXT_DELETE_REVIEWS_ELEMENTS', 'Maak beoordelingen los');
 ?>

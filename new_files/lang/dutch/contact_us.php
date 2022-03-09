@@ -18,6 +18,5 @@
 define('ERROR_EMAIL','<p><b>Uw e-mail:</b> Geen of ongeldige invoer!</p>');
 define('ERROR_VVCODE','<p><b>Veiligheids code:</b> Geen overeenkomst, voer veiligheidscode opnieuw in!</p>');
 define('ERROR_MSG_BODY','<p><b>Uw bericht:</b> Geen invoer!</p>');
-
-   
+  
 ?>

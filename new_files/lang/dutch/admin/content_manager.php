@@ -13,7 +13,7 @@
    Released under the GNU General Public License 
    --------------------------------------------------------------*/
    
- define('HEADING_TITLE','Content Manager');
+ defined('HEADING_TITLE') OR define('HEADING_TITLE','Content Manager');
  define('HEADING_CONTENT','Site Content');
  define('HEADING_PRODUCTS_CONTENT','Artikel Content');
  define('HEADING_CONTENT_MANAGER_CONTENT','Inhoud van de site');
@@ -37,10 +37,10 @@
  define('TABLE_HEADING_CONTENT_HITS','Hits');
  define('TABLE_HEADING_CONTENT_GROUP','Groep');
  define('TABLE_HEADING_CONTENT_SORT','Sorteervolgorde');
- define('TEXT_YES','Ja');
- define('TEXT_NO','Nee');
+ defined('TEXT_YES') OR define('TEXT_YES','Ja');
+ defined('TEXT_NO') OR define('TEXT_NO','Nee');
  define('TABLE_HEADING_CONTENT_ACTION','Actie');
- define('TEXT_DELETE','Verwijderen');
+ defined('TEXT_DELETE') OR define('TEXT_DELETE','Verwijderen');
  define('TEXT_EDIT','Bewerken');
  define('TEXT_PREVIEW','Voorvertoning');
  define('CONFIRM_DELETE','Inhoud verwijderen ?');
@@ -60,7 +60,7 @@
  define('TEXT_UPLOAD_FILE_LOCAL','(van uw lokaal systeem)');
  define('TEXT_CHOOSE_FILE','Kies bestand:');
  define('TEXT_CHOOSE_FILE_DESC','U kunt ook een reeds bestaand bestand uit de lijst kiezen.');
- define('TEXT_NO_FILE','Selectie verwijderen');
+ defined('TEXT_NO_FILE') OR define('TEXT_NO_FILE','Selectie verwijderen');
  define('TEXT_CHOOSE_FILE_SERVER','(Indien u uw bestanden reeds via FTP naar <i>(media/content)</i> heeft geladen, kunt u hier het bestand uitkiezen.');
  define('TEXT_CURRENT_FILE','Aktueel Bestand:');
  define('TEXT_FILE_DESCRIPTION','<b>Info:</b><br />U heeft tevens de mogelijkheid om een <b>.html</b> of <b>.htm</b> bestand te uploaden en te tonen als content.<br /> Als u een bestand selecteerd of upload, zal de tekst in de box genegeerd worden.<br /><br />');
@@ -72,7 +72,7 @@
  define('TEXT_PARENT_DESCRIPTION','Aan dit document toewijzen');
  define('TEXT_PRODUCT','Artikel:');
  define('TEXT_LINK','Link:');
- define('TEXT_SORT_ORDER','Sortering:');
+ defined('TEXT_SORT_ORDER') OR define('TEXT_SORT_ORDER','Sortering:');
  define('TEXT_GROUP','Taal Groep:');
  define('TEXT_GROUP_DESC','Met deze ID worden gelijke onderwerpen met verschillende talen aan elkaar gelinkt.');
 
@@ -96,6 +96,6 @@
  define('TEXT_STATUS_ACTIVE_DESCRIPTION', 'Inhoud mogelijk maken?');
  
  define('TEXT_CONTENT_DOUBLE_GROUP_INDEX', 'Duplicate Content Group Index! Sla alstublieft weer op. Het probleem is dus automatisch opgelost!');
- define('TEXT_CHARACTERS','Borden');
+ defined('TEXT_CHARACTERS') OR define('TEXT_CHARACTERS','Borden');
  define('TEXT_KEEP_FILENAME', 'Houd de bestandsnaam:');
 ?>

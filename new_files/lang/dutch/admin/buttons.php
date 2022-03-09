@@ -53,7 +53,7 @@ define('BUTTON_NEW_ORDER', 'Nieuwe Bestelling');
 define('BUTTON_CREATE_ACCOUNT', 'Nieuwe klant');
 define('BUTTON_SEARCH', 'Zoeken');
 define('BUTTON_PRODUCT_OPTIONS', 'Artikelopties');
-define('BUTTON_PREVIEW', 'Preview');
+define('BUTTON_PREVIEW', 'Voorbeeld');
 define('BUTTON_MODULE_REMOVE', 'Deinstalleren');
 define('BUTTON_MODULE_INSTALL', 'Installeren');
 define('BUTTON_START', 'Start');

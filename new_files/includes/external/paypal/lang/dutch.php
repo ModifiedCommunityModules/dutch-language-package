@@ -65,10 +65,59 @@ $lang_array = array(
   'TEXT_PAYPAL_CAPTURE_SUBMIT' => 'Neem  op.',
   'TEXT_PAYPAL_CAPTURED' => 'Betaling vastgelegd',
   
+  // products
+  'TEXT_PAYPAL_PRODUCTS_TYPE' => 'Type product',
+  'TEXT_PAYPAL_CREATE_PRODUCT' => 'Artikel maken',
   
+  
+  // subscriptions
+  'TEXT_PAYPAL_SUBSCRIPTIONS_HEADING' => 'PayPal-abonnement',
+  'TEXT_PAYPAL_PLANS' => 'Plan',
+  'TEXT_PAYPAL_NEW_PLAN' => 'Nieuw plan',
+  'TEXT_PAYPAL_PLAN_SAVE' => 'Maak plan',
+  'TEXT_PAYPAL_PLAN_PATCH' => 'Plan bijwerken',
+  'TEXT_PAYPAL_PLAN_STATUS' => 'Status',
+  'TEXT_PAYPAL_PLAN_NAME' => 'Benaming',
+  'TEXT_PAYPAL_PLAN_DAY_NAME_INFO' => 'De benaming wordt aan de klant meegedeeld en kan niet meer worden gewijzigd.',
+  'TEXT_PAYPAL_PLAN_INTERVAL' => 'Betaling',
+  'TEXT_PAYPAL_PLAN_CYCLE' => 'Laufzeit',
+  'TEXT_PAYPAL_PLAN_CYCLE_NO_LIMIT' => 'tot herroeping',
+  'TEXT_PAYPAL_PLAN_FIXED_PRICE' => 'Prijs',
+  'TEXT_PAYPAL_PLAN_SETUP_FEE' => 'Oprichtingskosten',
+  'TEXT_PAYPAL_PLAN_TAX_CLASS' => 'Fiscale klasse',
+  'TEXT_PAYPAL_PLAN_TAX_INCLUDE' => 'Belasting inbegrepen',
+  
+  'TEXT_PAYPAL_PLAN_DAY' => 'Dagelijks',
+  'TEXT_PAYPAL_PLAN_WEEK' => 'Wekelijks',
+  'TEXT_PAYPAL_PLAN_MONTH' => 'Maandelijks',
+  'TEXT_PAYPAL_PLAN_YEAR' => 'Jaarlijks',
+  
+  'TEXT_PAYPAL_NO_CHANGE' => 'kan niet meer veranderd worden',
+  'TEXT_ACTIVE' => 'Activeert',
+  'TEXT_INACTIVE' => 'Uitgeschakeld',
+
+  'TEXT_NONE' => '--geen--',
+  'TEXT_YES' => 'ja',
+  'TEXT_NO' => 'geen',
+  
+  'TEXT_PAYPAL_BILLING' => 'Betalingen',
+  'TEXT_PAYPAL_BILLING_OUTSTANDING' => 'verschuldigd bedrag:',
+  'TEXT_PAYPAL_BILLING_CYCLES_COMPLETED' => 'Betalingen verricht:',
+  'TEXT_PAYPAL_BILLING_CYCLES_REMAINING' => 'Betalingen geopend:',
+  'TEXT_PAYPAL_BILLING_CYCLES_TOTAL' => 'Totaal betalingen:',
+  'TEXT_PAYPAL_BILLING_TIME_NEXT' => 'Volgende betaling:',
+  'TEXT_PAYPAL_BILLING_TIME_FINAL' => 'Laatste betaling:',
+  'TEXT_PAYPAL_BILLING_FAILED' => 'Mislukt:',
+  'TEXT_PAYPAL_CANCEL' => 'Betalingen annuleren',
+  'TEXT_PAYPAL_CANCEL_SUBMIT' => 'Bevestig',
+
   // error
   'TEXT_PAYPAL_ERROR_AMOUNT' => 'Voer een geldig bedrag in',
   'TEXT_PAYPAL_ERROR_ALREADY_PAID' => 'We hebben uw betaling al ontvangen. Bedankt!',
+  'TEXT_PAYPAL_ERROR_NO_PLAN' => 'Kies een plan.',
+  'TEXT_PAYPAL_ERROR_MAX_PRODUCTS' => 'Dit artikel kan alleen worden gekocht.',
+  'TEXT_PAYPAL_ERROR_CANCEL' => 'Er is een fout opgetreden tijdens de annulering.',
+  'TEXT_PAYPAL_ERROR_SUBSCRIPTION_PRODUCTS' => 'U hebt een abonnementsartikel in uw winkelwagentje dat alleen kan worden gekocht.',
   
   
   // diverse

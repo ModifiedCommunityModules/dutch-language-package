@@ -26,6 +26,7 @@ define('TABLE_HEADING_EXPIRES_DATE', 'Geldig tot');
 define('TABLE_HEADING_PRODUCTS_PRICE', 'Artikelprijs');
 define('TABLE_HEADING_STATUS', 'Status');
 define('TABLE_HEADING_ACTION', 'Actie');
+define('TABLE_HEADING_EDIT','Bewerken');
 
 define('TEXT_SPECIALS_PRODUCT', 'Artikel:');
 define('TEXT_SPECIALS_SPECIAL_PRICE', 'Aanbieding:');
@@ -41,6 +42,10 @@ define('TEXT_INFO_PERCENTAGE', 'Percentage:');
 define('TEXT_INFO_START_DATE', 'Geldig van:');
 define('TEXT_INFO_EXPIRES_DATE', 'Geldig tot:');
 define('TEXT_INFO_STATUS_CHANGE', 'Status gewijzigd:');
+
+define('TEXT_ACTIVE_ELEMENT','Actief element');
+define('TEXT_MARKED_ELEMENTS','Gemarkeerde elementen');
+define('TEXT_INFO_HEADING_DELETE_ELEMENTS', 'Maak elementen los');
 
 define('TEXT_INFO_HEADING_DELETE_SPECIALS', 'Aanbieding verwijderen');
 define('TEXT_INFO_DELETE_INTRO', 'Weet u zeker dat u de aanbieding wilt verwijderen?');

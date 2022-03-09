@@ -64,6 +64,7 @@ define('HEADER_TITLE_ADMINISTRATION', 'Administratie');
 // text for gender
 define('MALE', 'Meneer');
 define('FEMALE', 'Mevrouw');
+define('DIVERSE', 'Duikers');
 
 // text for date of birth example
 define('DOB_FORMAT_STRING', 'dd/mm/yyyy');
@@ -82,6 +83,7 @@ define('BOX_HEADING_LOCALIZATION', 'Taal/valuta\'s');
 define('BOX_HEADING_TEMPLATES','Sjablonen');
 define('BOX_HEADING_LOCATION_AND_TAXES', 'Locatie/Belasting');
 define('BOX_HEADING_CATALOG', 'Catalogus');
+define('BOX_MODULE_NEWSLETTER','Nieuwsbrief');
 
 define('BOX_CONTENT','Content Manager');
 define('TEXT_ALLOWED', 'Permissie');
@@ -194,7 +196,8 @@ define('BOX_NEWSLETTER_RECIPIENTS', 'Ontvangers van de nieuwsbrief');
 define('BOX_DSGVO_EXPORT', 'BBPR Uitvoer');
 define('BOX_SUPPORT', 'Ondersteuning');
 define('BOX_CACHING', 'Caching');
-define('BOX_MODULE_NEWSLETTER','Nieuwsbrief');
+define('BOX_COOKIE_CONSENT', 'Cookie Toestemming');
+define('BOX_SEMKNOX', 'Site zoeken 360 Product zoeken');
 
 define('TXT_GROUPS','<b>Groepen</b>:');
 define('TXT_SYSTEM','System');
@@ -272,6 +275,7 @@ define('ENTRY_CITY_ERROR', '&nbsp;<span class="errorText">minstens ' . ENTRY_CIT
 define('ENTRY_STATE', 'Provincie:');
 define('ENTRY_STATE_ERROR', '&nbsp;<span class="errorText">verplicht veld</font></small>');
 define('ENTRY_COUNTRY', 'Land:');
+define('ENTRY_COUNTRY_ERROR', 'Selecteer uw land uit de lijst.');
 define('ENTRY_TELEPHONE_NUMBER', 'Telefoonnummer:');
 define('ENTRY_TELEPHONE_NUMBER_ERROR', '&nbsp;<span class="errorText">minstens ' . ENTRY_TELEPHONE_MIN_LENGTH . ' Cijfers</span>');
 define('ENTRY_FAX_NUMBER', 'Faxnummer:');
@@ -291,6 +295,7 @@ define('SAVE_ENTRY','Bewaar wijzigingen?');
 define('TEXT_CHOOSE_INFO_TEMPLATE','Template voor artikel details');
 define('TEXT_CHOOSE_OPTIONS_TEMPLATE','Template voor artikel opties');
 define('TEXT_SELECT','-- Selecteer AUB --');
+define('PULL_DOWN_DEFAULT', 'Kies alstublieft');
 
 // BOF - Tomcraft - 2009-06-10 - added some missing alternative text on admin icons
 // Icons
@@ -324,6 +329,7 @@ define('TEXT_DISPLAY_NUMBER_OF_CURRENCIES', 'Getoond worden <b>%d</b> tot <b>%d<
 define('TEXT_DISPLAY_NUMBER_OF_LANGUAGES', 'Getoond worden <b>%d</b> tot <b>%d</b> (van in totaal <b>%d</b> Talen)');
 define('TEXT_DISPLAY_NUMBER_OF_MANUFACTURERS', 'Getoond worden <b>%d</b> tot <b>%d</b> (van in totaal <b>%d</b> Fabrikanten)');
 define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS', 'Getoond worden <b>%d</b> tot <b>%d</b> (van in totaal <b>%d</b> Nieuwsbrieven)');
+define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS_RECIPIENTS', 'Weergegeven zijn <b>%d</b> tot <b>%d</b> (van een totaal van <b>%d</b> nieuwsbriefontvangers).');
 define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Getoond worden <b>%d</b> tot <b>%d</b> (van in totaal <b>%d</b> Bestellingen)');
 define('TEXT_DISPLAY_NUMBER_OF_ORDERS_STATUS', 'Getoond worden <b>%d</b> tot <b>%d</b> (van in totaal <b>%d</b> Bestelstatus)');
 define('TEXT_DISPLAY_NUMBER_OF_XSELL_GROUP', 'Getoond worden <b>%d</b> tot <b>%d</b> (van in totaal <b>%d</b> Cross-Marketing Groepen)');
@@ -374,6 +380,7 @@ define('TEXT_PAYPAL_CONFIG','<b>WAARSCHUWING:</b> Configureer hier de PayPal-bet
 define('TEXT_DUPLICATE_CONFIG_ERROR','<b>WAARSCHUWING:</b> Duplicaatconfiguratietoets: ');
 
 define('TEXT_NETTO','Netto: ');
+define('TEXT_DUPLICATE_CONFIG_ERROR','<b>WAARSCHUWING:</b> Dubbele configuratietoets: ');
 
 define('ENTRY_CID','Klantnummer:');
 define('IP','Bestel IP:');
@@ -431,6 +438,7 @@ define('ENTRY_CUSTOMERS_VAT_ID', 'BTW-IdNr.:');
 define('TEXT_VAT_FALSE','<font color="#ff0000">Gecontroleerd/Onwaar!</font>');
 define('TEXT_VAT_TRUE','<font color="#ff0000">Gecontroleerd/OK!</font>');
 define('TEXT_VAT_UNKNOWN_COUNTRY','<font color="#ff0000">Niet Gecontroleerd/Onbekend Land!</font>');
+define('TEXT_VAT_INVALID_INPUT','<span class="messageStackError">Niet gecontroleerd / De ingevoerde landcode is ongeldig of het BTW-registratienummer is leeg!</span>');
 define('TEXT_VAT_UNKNOWN_ALGORITHM','<font color="#ff0000">Niet Gecontroleerd/Geen controle mogelijk!</font>');
 define('TEXT_VAT_SERVICE_UNAVAILABLE','<span class="messageStackError">Niet gecontroleerd/De SOAP service is niet beschikbaar, probeer het later nog eens!</span>');
 define('TEXT_VAT_MS_UNAVAILABLE','<span class="messageStackError">Niet gecontroleerd/De dienst van de lidstaat is niet beschikbaar, probeer het later nog eens of met een andere lidstaat!</span>');

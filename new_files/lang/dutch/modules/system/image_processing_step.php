@@ -24,7 +24,13 @@
 define('MODULE_STEP_IMAGE_PROCESS_TEXT_DESCRIPTION', 'Alle afbeeldingen in de mappen<br /><br />
 /images/product_images/popup_images/<br />
 /images/product_images/info_images/<br />
-/images/product_images/thumbnail_images/ <br /> <br /> nieuw gecreëerd.<br /> <br />
+/images/product_images/midi_images/<br />
+/images/product_images/thumbnail_images/ <br />
+/images/product_images/mini_images/ <br /> 
+/images/categories/ <br /> 
+/images/manufacturers/ <br /> 
+/images/banner/ <br /> 
+ <br /> nieuw gecreëerd.<br /> <br />
 Hiervoor verwerkt het script slechts een beperkt aantal %s beelden en roept zichzelf vervolgens opnieuw op.<br /> <br />');
 define('MODULE_STEP_IMAGE_PROCESS_TEXT_TITLE', 'Imageprocessing - Productfoto\'s');
 define('MODULE_STEP_IMAGE_PROCESS_STATUS_DESC','Modulestatus');
@@ -35,12 +41,34 @@ define('IMAGE_EXPORT_TYPE','<hr noshade><strong>Batchverwerking:</strong>');
 define('IMAGE_STEP_INFO','Foto\'s: ');
 define('IMAGE_STEP_INFO_READY',' - Klaar!');
 define('TEXT_MAX_IMAGES','max. afbeeldingen per pagina herladen');
+define('TEXT_PROCESS_TYPE', '<b>Beeldverwerking:</b>');
+define('TEXT_SETTINGS', '<b>Instellingen:</b>');
+define('TEXT_LOGGING', '<b>Log:</b>');
 define('TEXT_ONLY_MISSING_IMAGES','Cre&euml;er alleen ontbrekende beelden');
 define('MODULE_STEP_READY_STYLE_TEXT', '<div class="ready_info">%s</div>');
 define('MODULE_STEP_READY_STYLE_BACK', MODULE_STEP_READY_STYLE_TEXT);
 define('TEXT_LOWER_FILE_EXT','Bestandsextensie omzetten naar kleine letters Voorbeeld: <b> JPG -> jpg</b>');
 define('IMAGE_COUNT_INFO','Aantal beelden in %s: %s st. ');
 
-define('TEXT_LOGFILE','Schakel logging in, nuttig voor het oplossen van problemen. Het logbestand wordt opgeslagen in de map /log in de hoofdmap.');
+define('TEXT_PRODUCTS_MINI_IMAGES','Mini foto\'s');
+define('TEXT_PRODUCTS_THUMBNAIL_IMAGES','Thumbnail afbeeldingen');
+define('TEXT_PRODUCTS_MIDI_IMAGES','Midi foto\'s');
+define('TEXT_PRODUCTS_INFO_IMAGES','Info foto\'s');
+define('TEXT_PRODUCTS_POPUP_IMAGES','Pop-up beelden');
+
+define('TEXT_CATEGORIES_IMAGES','Categorie Afbeeldingen');
+define('TEXT_CATEGORIES_LIST_IMAGES','Categorie Afbeeldingen Lijst');
+define('TEXT_CATEGORIES_MOBILE_IMAGES','Categorie Foto\'s Mobiel');
+
+define('TEXT_BANNERS_IMAGES','Banner afbeeldingen');
+define('TEXT_BANNERS_MOBILE_IMAGES','Banner Afbeeldingen Mobiel');
+
+define('TEXT_MANUFACTURERS_IMAGES','Afbeeldingen fabrikant');
+define('TEXT_PRODUCTS','Artikel');
+define('TEXT_CATEGORIES','Categorie&euml;n');
+define('TEXT_MANUFACTURERS','Fabrikant');
+define('TEXT_BANNERS','Banner');
+
+define('TEXT_LOGFILE','Activeer logging, nuttig voor troubleshooting. Het logbestand wordt opgeslagen in de map /log in de hoofddirectory.');
 
 ?>

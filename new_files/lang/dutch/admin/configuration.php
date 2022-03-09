@@ -156,6 +156,9 @@ define('MAX_DISPLAY_BESTSELLERS_DAYS_TITLE' , 'Maximale leeftijd (dagen) voor Be
 define('MAX_DISPLAY_BESTSELLERS_DAYS_DESC' , 'Maximale leeftijd (in dagen) voor producten die worden weergegeven als "Best Sellers".');
 define('MAX_DISPLAY_ALSO_PURCHASED_TITLE' , 'Ook dit gekocht');
 define('MAX_DISPLAY_ALSO_PURCHASED_DESC' , 'Maximaal aantal artikelen welke te tonen in de "Deze klant kocht ook" box');
+define('MAX_DISPLAY_ALSO_PURCHASED_ORDERS_TITLE' , 'Aantal bestellingen Ook gekocht');
+define('MAX_DISPLAY_ALSO_PURCHASED_ORDERS_DESC' , 'Maximum aantal gezochte bestellingen om te bepalen welke artikelen ook gekocht zijn.');
+
 define('MAX_DISPLAY_PRODUCTS_IN_ORDER_HISTORY_BOX_TITLE' , 'Besteloverzicht Klant Box');
 define('MAX_DISPLAY_PRODUCTS_IN_ORDER_HISTORY_BOX_DESC' , 'Maximaal aantal artikelen te tonen in de klanten bestelhistorie box.');
 define('MAX_DISPLAY_ORDER_HISTORY_TITLE' , 'Besteloverzicht');
@@ -165,10 +168,20 @@ define('MAX_PRODUCTS_QTY_DESC', 'Maximaal aantal artikelen die men kan ingeven')
 define('MAX_DISPLAY_NEW_PRODUCTS_DAYS_TITLE' , 'Aantal dagen voor nieuwe artikelen');
 define('MAX_DISPLAY_NEW_PRODUCTS_DAYS_DESC' , 'Maximaal aantal dagen dat nieuwe producten getoond dienen te worden');
 
+define('PRODUCT_IMAGE_MINI_WIDTH_TITLE' , 'Artikel mini afbeelding breedte');
+define('PRODUCT_IMAGE_MINI_WIDTH_DESC' , 'Maximale breedte van het item mini in pixels. (Standaard: 80). Voor grotere waarden kan het nodig zijn "productPreviewImage" in het stylesheet.css bestand van de template aan te passen.');
+define('PRODUCT_IMAGE_MINI_HEIGHT_TITLE' , 'H&ouml;he van het artikel minifoto\'s');
+define('PRODUCT_IMAGE_MINI_HEIGHT_DESC' , 'Maximale hoogte van het item mini in pixels. (Standaard: 80)');
+
 define('PRODUCT_IMAGE_THUMBNAIL_WIDTH_TITLE' , 'Breedte van Artikel Thumbnails');
 define('PRODUCT_IMAGE_THUMBNAIL_WIDTH_DESC' , 'Maximale breedte van artikel thumbnails (in pixels)');
 define('PRODUCT_IMAGE_THUMBNAIL_HEIGHT_TITLE' , 'Hoogte van Artikel Thumbnails');
 define('PRODUCT_IMAGE_THUMBNAIL_HEIGHT_DESC' , 'Maximale hoogte van de artikel thumbnails (in pixels)');
+
+define('PRODUCT_IMAGE_MIDI_WIDTH_TITLE' , 'Breedte van het artikel midi beelden');
+define('PRODUCT_IMAGE_MIDI_WIDTH_DESC' , 'Maximale breedte van het artikel midi in pixels. (Standaard: 160). Voor grotere waarden kan het nodig zijn "productPreviewImage" in het stylesheet.css bestand van de template aan te passen.');
+define('PRODUCT_IMAGE_MIDI_HEIGHT_TITLE' , 'H&ouml;he van het artikel midi foto\'s');
+define('PRODUCT_IMAGE_MIDI_HEIGHT_DESC' , 'Maximale hoogte van het artikel midi in pixels. (Standaard: 160)');
 
 define('PRODUCT_IMAGE_INFO_WIDTH_TITLE' , 'Breedte van Artikel Info Afbeeldingen');
 define('PRODUCT_IMAGE_INFO_WIDTH_DESC' , 'Maximale breedte van artikel info afbeeldingen (in pixels)');
@@ -179,6 +192,36 @@ define('PRODUCT_IMAGE_POPUP_WIDTH_TITLE' , 'Breedte van Popup Afbeeldingen');
 define('PRODUCT_IMAGE_POPUP_WIDTH_DESC' , 'Maximale breedte van popup afbeeldingen (in pixels)');
 define('PRODUCT_IMAGE_POPUP_HEIGHT_TITLE' , 'Hoogte van Popup Afbeeldingen');
 define('PRODUCT_IMAGE_POPUP_HEIGHT_DESC' , 'Maximale hoogte van popup afbeeldingen (in pixels');
+
+define('CATEGORIES_IMAGE_WIDTH_TITLE' , 'Breedte van de categorie Afbeeldingen');
+define('CATEGORIES_IMAGE_WIDTH_DESC' , 'Maximale breedte van de categorie Afbeeldingen in pixels. (Standaard: 985).');
+define('CATEGORIES_IMAGE_HEIGHT_TITLE' , 'Thuis van de categorie Foto\'s');
+define('CATEGORIES_IMAGE_HEIGHT_DESC' , 'Maximale hoogte van de categorie afbeeldingen in pixels. (Standaard: 370)');
+
+define('CATEGORIES_IMAGE_MOBILE_WIDTH_TITLE' , 'Breedte van de categorie Afbeeldingen Mobiel');
+define('CATEGORIES_IMAGE_MOBILE_WIDTH_DESC' , 'Maximale breedte van de categorie Afbeeldingen Mobiel in pixels. (Standaard: 600).');
+define('CATEGORIES_IMAGE_MOBILE_HEIGHT_TITLE' , 'Home van de categorie Mobiele beelden');
+define('CATEGORIES_IMAGE_MOBILE_HEIGHT_DESC' , 'Maximale hoogte van de categorie Afbeeldingen Mobiel in pixels. (Standaard: 400)');
+
+define('CATEGORIES_IMAGE_LIST_WIDTH_TITLE' , 'Breedte van de categorie Afbeeldingen Lijst');
+define('CATEGORIES_IMAGE_LIST_WIDTH_DESC' , 'Maximale breedte van de categorie Afbeeldingen Lijst in pixels. (Standaard: 225).');
+define('CATEGORIES_IMAGE_LIST_HEIGHT_TITLE' , 'High van de categorie Afbeeldingen Lijst');
+define('CATEGORIES_IMAGE_LIST_HEIGHT_DESC' , 'Maximale hoogte van de categorieplaatjes in pixels. (Standaard: 170)');
+
+define('MANUFACTURER_IMAGE_WIDTH_TITLE' , 'Breedte van de afbeeldingen van de fabrikant');
+define('MANUFACTURER_IMAGE_WIDTH_DESC' , 'Maximale breedte van de afbeeldingen van de fabrikant in pixels. (Standaard: 100).');
+define('MANUFACTURER_IMAGE_HEIGHT_TITLE' , 'High van de fabrikant beelden');
+define('MANUFACTURER_IMAGE_HEIGHT_DESC' , 'Maximale hoogte van de afbeeldingen van de fabrikant in pixels. (Standaard: 60)');
+
+define('BANNERS_IMAGE_WIDTH_TITLE' , 'Breite des Bannerbildes');
+define('BANNERS_IMAGE_WIDTH_DESC' , 'Maximale Breite der Bannerbilder in Pixeln. (Standard: 985).');
+define('BANNERS_IMAGE_HEIGHT_TITLE' , 'High der Bannerbilder');
+define('BANNERS_IMAGE_HEIGHT_DESC' , 'Maximale High der Bannerbilder in Pixeln. (Standard: 400)');
+
+define('BANNERS_IMAGE_MOBILE_WIDTH_TITLE' , 'Breedte van bannerafbeeldingen Mobiel');
+define('BANNERS_IMAGE_MOBILE_WIDTH_DESC' , 'Maximale breedte van bannerafbeeldingen Mobiel in pixels. (Standaard: 600).');
+define('BANNERS_IMAGE_MOBILE_HEIGHT_TITLE' , 'Hoog van de bannerafbeeldingen Mobiel');
+define('BANNERS_IMAGE_MOBILE_HEIGHT_DESC' , 'Maximale hoogte van de bannerafbeeldingen Mobile in pixels. (Standaard: 400)');
 
 define('SMALL_IMAGE_WIDTH_TITLE' , 'Breedte Kleine Afbeelding');
 define('SMALL_IMAGE_WIDTH_DESC' , 'Breedte kleine afbeeldingen (in pixels)');
@@ -193,12 +236,18 @@ define('SUBCATEGORY_IMAGE_HEIGHT_DESC' , 'Hoogte van subcategorie afbeeldingen (
 define('MO_PICS_TITLE','Aantal artikel afbeeldingen');
 define('MO_PICS_DESC','als dit op > 0 is gezet, dan kunt u meerdere afbeeldingen per artikel uploaden/weergeven');
 
+define('PRODUCT_IMAGE_MINI_MERGE_TITLE' , 'Artikel Mini Afbeeldingen: Samenvoegen<br /><img src="images/config_merge.gif">');
+define('PRODUCT_IMAGE_MINI_MERGE_DESC' , 'Artikel Mini Afbeeldingen: Samenvoegen<br /><br />Standaardwaarde: (overlay.gif,10,-50,60,FF0000)<br /><br />overlay samengevoegd beeld<br />Gebruik:<br />(merge image,x start [neg = from right],y start [neg = from base], opaciteit, transparante kleur op samengevoegd beeld)');
+
 //This is for the Images showing your products for preview. All the small stuff.
 
 define('PRODUCT_IMAGE_THUMBNAIL_MERGE_TITLE' , 'Artikel-Thumbnails:Merge<br /><img src="images/config_merge.gif">');
 define('PRODUCT_IMAGE_THUMBNAIL_MERGE_DESC' , 'Artikel-Thumbnails:Merge<br /><br />Standaard-waarden: (overlay.gif,10,-50,60,FF0000)<br /><br />overlay merge image<br />Gebruik:<br />(merge image,x start [neg = from right],y start [neg = from base],opacity, transparent colour on merge image)');
 
 //And this is for the Images showing your products in single-view
+
+define('PRODUCT_IMAGE_MIDI_MERGE_TITLE' , 'Artikel Midi Afbeeldingen: Samenvoegen');
+define('PRODUCT_IMAGE_MIDI_MERGE_DESC' , 'Artikel Midi Afbeeldingen: Samenvoegen<br /><br />Standaardwaarde: (overlay.gif,10,-50,60,FF0000)<br /><br />overlay samengevoegd beeld<br />Gebruik:<br />(merge image,x start [neg = from right],y start [neg = from base],opaciteit, transparante kleur op samengevoegd beeld)');
 
 define('PRODUCT_IMAGE_INFO_MERGE_TITLE' , 'Product Afbeeldingen: Samenvoegen');
 define('PRODUCT_IMAGE_INFO_MERGE_DESC' , 'Artikel-Info Afbeeldingen:Merge<br /><br />Standaard waarden: (overlay.gif,10,-50,60,FF0000)<br /><br />overlay merge image<br />Gebruik:<br />(merge image,x start [neg = from right],y start [neg = from base],opacity,transparent colour on merge image)');
@@ -241,6 +290,17 @@ define('SHIPPING_INFOS_DESC' , 'Selecteer de inhoud om de verzendkosten weer te 
 define('SHIPPING_DEFAULT_TAX_CLASS_METHOD_TITLE' , 'Berekeningsmethode van de standaard belastingklasse');
 define('SHIPPING_DEFAULT_TAX_CLASS_METHOD_DESC' , 'geen: toon geen verzendingsbelasting<br />auto proportioneel: toon verzendingsbelasting proportioneel aan bestelling<br />auto max: toon verzendingsbelasting, gebruik belastingtarief van grootste omzetgroep');
 
+define('SHOW_SHIPPING_MODULE_TITLE_TITLE' , 'Benaming Verzendingskosten');
+define('SHOW_SHIPPING_MODULE_TITLE_DESC' , 'Kies de naam van de verzendkosten in het overzicht');
+define('CUSTOM_SHIPPING_TITLE_TITLE' , 'Individuele benaming Verzendingskosten');
+define('CUSTOM_SHIPPING_TITLE_DESC' , 'Voer een aanwijzing in. Deze instelling is alleen van kracht als de verzendingskostenaanduiding is ingesteld op "Door gebruiker gedefinieerd".');
+define('CFG_TXT_SHIPPING_DEFAULT', 'Standaard');
+define('CFG_TXT_SHIPPING_TITLE', 'Titel');
+define('CFG_TXT_SHIPPING_CUSTOM', 'Custom');
+
+define('CAPITALIZE_ADDRESS_FORMAT_TITLE' , 'Adres in hoofdletters');
+define('CAPITALIZE_ADDRESS_FORMAT_DESC' , 'Uitvoer land- en plaatsnamen in hoofdletters');
+
 define('PRODUCT_LIST_FILTER_TITLE' , 'Weergave Categorie/Fabrikant Filter (0=uit; 1=aan)');
 define('PRODUCT_LIST_FILTER_DESC' , 'Wilt u het Categorie/Fabrikant Filter weergeven?');
 
@@ -251,6 +311,8 @@ define('ATTRIBUTE_STOCK_CHECK_TITLE' , 'Controleer Kenmerk Voorraad Niveau');
 define('ATTRIBUTE_STOCK_CHECK_DESC' , 'Controleer of er voldoende voorraad van artikelen met bepaalde kenmerken aanwezig is');
 define('STOCK_LIMITED_TITLE' , 'Van de voorraad aftrekken');
 define('STOCK_LIMITED_DESC' , 'Artikel (aantal) aftrekken van voorraad bij bestelling ');
+define('STOCK_LIMITED_DOWNLOADS_TITLE' , 'Aftrek downloads van hoeveelheid goederen');
+define('STOCK_LIMITED_DOWNLOADS_DESC' , 'Moet de hoeveelheid goederen ook worden afgetrokken voor downloadartikelen?');
 define('STOCK_ALLOW_CHECKOUT_TITLE' , 'Bestellen van artikelen die niet voorradig zijn toestaan');
 define('STOCK_ALLOW_CHECKOUT_DESC' , 'Toestaan om te bestellen ook als er onvoldoende voorraad is');
 define('STOCK_MARK_PRODUCT_OUT_OF_STOCK_TITLE' , 'Markeer artikelen welke niet voorradig zijn');
@@ -299,6 +361,8 @@ define('SEND_EMAILS_TITLE' , 'Versturen van E-Mails');
 define('SEND_EMAILS_DESC' , 'E-Mails naar klanten versturen');
 define('SENDMAIL_PATH_TITLE' , 'Het pad naar Sendmail');
 define('SENDMAIL_PATH_DESC' , 'Indien u sendmail gebruikt geef dan het juiste pad op(normalerwijze: /usr/bin/sendmail):');
+define('USE_SENDMAIL_OPTIONS_TITLE', 'Sendmail opties');
+define('USE_SENDMAIL_OPTIONS_DESC', 'Geeft aan of mail() een volledig sendmail-compatibele MTA gebruikt.');
 define('SMTP_MAIN_SERVER_TITLE' , 'Adres van SMTP Server');
 define('SMTP_MAIN_SERVER_DESC' , 'Geef het adres van de algemene SMTP Server op.');
 define('SMTP_BACKUP_SERVER_TITLE' , 'Adres van de SMTP Backup Server');
@@ -489,6 +553,11 @@ define('ACTIVATE_NAVIGATOR_DESC','productnavigator in product_info activeren/dea
 
 define('QUICKLINK_ACTIVATED_TITLE','Activeer Multilink / Kopieerfunctie');
 define('QUICKLINK_ACTIVATED_DESC','Maakt het mogelijk om meerdere categorie&euml;n te selecteren bij het uitvoeren van "kopieer product naar".');
+
+define('ACTIVATE_REVERSE_CROSS_SELLING_TITLE','Omgekeerde Cross-Marketing');
+define('ACTIVATE_REVERSE_CROSS_SELLING_DESC','omgekeerde cross-marketing functie activeren?');
+define('ACTIVATE_CROSS_SELLING_TITLE','Cross-Marketing');
+define('ACTIVATE_CROSS_SELLING_DESC','Activeer cross-marketing functie?');
 
 define('DOWNLOAD_UNALLOWED_PAYMENT_TITLE', 'Niet toegestane Download-Betalingsmodule');
 define('DOWNLOAD_UNALLOWED_PAYMENT_DESC', '<strong>NIET</strong> Toegestane betaalmodules voor downloads.Komma gescheiden lijst b.v. {banktransfer,cod,invoice,moneyorder}');
@@ -853,6 +922,9 @@ define('SEND_MAIL_ACCOUNT_CREATED_DESC', 'Een e-mail naar de klant sturen bij he
 
 define('STATUS_EMAIL_SENT_COPY_TO_ADMIN_TITLE', 'E-mail bij statuswijziging');
 define('STATUS_EMAIL_SENT_COPY_TO_ADMIN_DESC', 'Een e-mail sturen naar de admin bij een statuswijziging van de bestelling?');
+
+define('ORDER_EMAIL_SEND_COPY_TO_ADMIN_TITLE', 'E-mail orderbevestiging naar Admin');
+define('ORDER_EMAIL_SEND_COPY_TO_ADMIN_DESC', 'Moet een kopie van de orderbevestiging naar de admin worden gestuurd?');
 
 define('STOCK_CHECK_SPECIALS_TITLE', 'Controleer Specials Voorraad');
 define('STOCK_CHECK_SPECIALS_DESC', 'Controleer of er voldoende specials op voorraad zijn<br/><br/><b>ATTENTIE:</b> Als er onvoldoende specials op voorraad zijn, kan de bestelling alleen worden verwerkt na een vermindering van de hoeveelheid.');

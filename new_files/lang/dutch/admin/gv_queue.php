@@ -44,4 +44,6 @@ define('TEXT_REDEEM_COUPON_MESSAGE_AMOUNT', 'De cadeaubon(nen) die u heeft gekoc
 define('TEXT_REDEEM_COUPON_MESSAGE_BODY', '');
 define('TEXT_REDEEM_COUPON_MESSAGE_FOOTER', '');
 define('TEXT_REDEEM_COUPON_SUBJECT', 'Aankoop van gifbonnen');
+define('TEXT_INFO_DELETE_INTRO', 'Moet de bon worden geschrapt?');
+define('TEXT_INFO_REDEEM_INTRO', 'Moet de voucher worden ingewisseld?');
 ?>

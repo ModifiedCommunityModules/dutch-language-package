@@ -71,6 +71,8 @@ define('TEXT_EDIT_CATEGORIES_NAME', 'Categorie Naam:');
 define('TEXT_EDIT_CATEGORIES_HEADING_TITLE', 'Categorie Titel:');
 define('TEXT_EDIT_CATEGORIES_DESCRIPTION', 'Categorie Beschrijving:');
 define('TEXT_EDIT_CATEGORIES_IMAGE', 'Categorie Afbeelding:');
+define('TEXT_EDIT_CATEGORIES_IMAGE_LIST', 'Categorie Beeld Lijst:');
+define('TEXT_EDIT_CATEGORIES_IMAGE_MOBILE', 'Categorie Beeld Mobiel:');
 
 define('TEXT_EDIT_SORT_ORDER', 'Sorteervolgorde:');
 
@@ -258,4 +260,6 @@ define('TEXT_TAGS_COPY', 'Ook kopi&euml;ren van productkenmerken');
 define('TEXT_TAGS_COPY_INFO', 'Ook kopieer producteigenschappen<br />Alleen aanbevolen voor een enkel exemplaar (1 item)');
 
 define('TEXT_PRODUCTS_LAST_MODIFIED', 'Laatst gewijzigd:');
+define('TEXT_STOCK_UPDATE_SUCCESS', 'Voorraad bijgewerkt');
+define('TEXT_STOCK_UPDATE_ERROR', 'Voorraad niet bijgewerkt');
 ?>

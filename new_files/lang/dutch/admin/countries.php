@@ -35,4 +35,14 @@ define('TEXT_INFO_HEADING_EDIT_COUNTRY', 'Land bewerken');
 define('TEXT_INFO_HEADING_DELETE_COUNTRY', 'Land Verwijderen');
 
 define('TABLE_HEADING_REQUIRED_ZONES','Toon zones');
+
+define('TEXT_INFO_ADDRESS_FORMAT_HEADING', 'Adres formaat');
+define('TEXT_INFO_FIRSTNAME', 'Max');
+define('TEXT_INFO_LASTNAME', 'Monster man');
+define('TEXT_INFO_COMPANY', 'Bedrijf');
+define('TEXT_INFO_STREET_ADDRESS', 'Musterstr. 12');
+define('TEXT_INFO_SUBURB', 'Adres achtervoegsel');
+define('TEXT_INFO_CITY', 'Voorbeeldstad');
+define('TEXT_INFO_POSTCODE', '12345');
+define('TEXT_INFO_STATE', 'BE');
 ?>

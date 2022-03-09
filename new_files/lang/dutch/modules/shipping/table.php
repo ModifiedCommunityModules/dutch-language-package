@@ -19,6 +19,7 @@
 define('MODULE_SHIPPING_TABLE_TEXT_TITLE', 'Verzending per koerier');
 define('MODULE_SHIPPING_TABLE_TEXT_DESCRIPTION', 'Verzending per koerier');
 define('MODULE_SHIPPING_TABLE_TEXT_WAY', 'Verzending naar Nederland of Duitsland');
+define('MODULE_SHIPPING_TABLE_TEXT_UNITS', 'kg');
 define('MODULE_SHIPPING_TABLE_TEXT_WEIGHT', 'Gewicht');
 define('MODULE_SHIPPING_TABLE_TEXT_AMOUNT', 'Aantal');
 define('MODULE_SHIPPING_TABLE_UNDEFINED_RATE', 'De verzendkosten kunnen op dit moment niet worden berekend.');
