@@ -11,7 +11,7 @@ We recommend installing the module via the [MMLC](https://module-loader.de).
 *(Experienced developers can also install the module manually without MMLC. For this the required dependencies and autoloads must be also installed manually.)*
 
 ## Contributors
-- php-schubser - transferred to Github and entered in MMLC, update to 2.0.5.1
+- php-schubser - transferred to Github and entered in MMLC, update to 2.0.6.0
 - pchammer
 
 
